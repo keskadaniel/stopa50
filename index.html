@@ -1566,9 +1566,10 @@
                 </div>
                 <div>
                     <label class="block text-sm font-semibold mb-1">Numer telefonu</label>
-                    <input type="tel" name="telefon" required
+                    <input type="tel" name="telefon" required pattern="(\+?48)?[\s\-]?\d{3}[\s\-]?\d{3}[\s\-]?\d{3}"
                            class="w-full px-4 py-3 rounded-xl text-gray-900 bg-white/95 focus:outline-none focus:ring-2 focus:ring-white"
                            placeholder="600 123 456">
+                    <p id="tel-error" class="text-red-200 text-xs mt-1 hidden">Podaj poprawny polski numer (9 cyfr)</p>
                 </div>
                 <div>
                     <label class="block text-sm font-semibold mb-1">Transport</label>
@@ -1589,6 +1590,17 @@
                 </button>
                 <p id="form-msg" class="text-center text-sm mt-2 hidden"></p>
             </form>
+            <div id="thank-you" class="hidden text-center py-8">
+                <div class="text-6xl mb-4">&#x2764;&#xFE0F;</div>
+                <h3 class="text-2xl font-bold mb-3">Dzi&#281;kujemy za zapis!</h3>
+                <p class="text-red-100 text-lg mb-2">Liczymy na Ciebie <strong>24 kwietnia</strong> o <strong>12:00</strong></p>
+                <p class="text-red-100 mb-6">Warszawa, ul. Wronia 53</p>
+                <div class="bg-white/10 rounded-xl p-4 max-w-sm mx-auto">
+                    <p class="text-sm text-red-200 mb-2">Pami&#281;taj:</p>
+                    <p class="text-sm text-white">Przed protestem zg&#322;o&#347; si&#281; do organizator&oacute;w po kamizelki odblaskowe i b&#261;d&#378; punktualnie!</p>
+                </div>
+                <p class="text-red-200 text-sm mt-6">Udost&#281;pnij t&#281; stron&#281; znajomym &mdash; im nas wi&#281;cej, tym silniejszy g&#322;os.</p>
+            </div>
         </div>
     </section>
 
@@ -1773,8 +1785,19 @@
             var btn = document.getElementById('submit-btn');
             var loadTime = Date.now();
 
+            var telError = document.getElementById('tel-error');
+            var thankYou = document.getElementById('thank-you');
+            var phoneRegex = /^(\+?48)?[\s\-]?\d{3}[\s\-]?\d{3}[\s\-]?\d{3}$/;
+
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
+
+                var tel = form.telefon.value.trim();
+                if (!phoneRegex.test(tel)) {
+                    telError.classList.remove('hidden');
+                    return;
+                }
+                telError.classList.add('hidden');
 
                 if (Date.now() - loadTime < 3000) {
                     msg.textContent = 'Zbyt szybko. Spr\u00f3buj ponownie.';
@@ -1789,7 +1812,7 @@
                     imie: form.imie.value.trim(),
                     liczba: form.liczba.value,
                     miejscowosc: form.miejscowosc.value.trim(),
-                    telefon: form.telefon.value.trim(),
+                    telefon: tel,
                     transport: form.transport.value,
                     website: form.website.value
                 };
@@ -1802,8 +1825,12 @@
                 .then(function(r) {
                     if (r.result === 'success') {
                         form.style.display = 'none';
-                        msg.textContent = 'Dzi\u0119kujemy! Jeste\u015b zapisany/a. Do zobaczenia 24 kwietnia!';
-                        msg.className = 'text-center text-lg mt-4 text-white font-semibold';
+                        thankYou.classList.remove('hidden');
+                    } else if (r.result === 'duplicate') {
+                        msg.textContent = 'Ju\u017c jeste\u015b zapisany/a!';
+                        msg.className = 'text-center text-sm mt-2 text-white';
+                        btn.disabled = false;
+                        btn.textContent = 'Zapisz si\u0119';
                     } else {
                         throw new Error();
                     }
