@@ -523,8 +523,8 @@
     <section class="py-20 bg-forest-950">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Planowany przebieg trasy &mdash; wariant czerwony</h2>
-                <p class="text-forest-300 text-lg">Podwariant Tarczyn &mdash; korytarz autostrady A50 przecinaj&#261;cy gmin&#281;</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Warianty przebiegu A50 przez gmin&#281; Tarczyn</h2>
+                <p class="text-forest-300 text-lg">Warianty 1 Czerwony (podwariant Tarczyn), 1 Turkusowy, 2 Fioletowy i 3 Br&#261;zowy &mdash; wszystkie przecinaj&#261; gmin&#281;. Sprzeciwiamy si&#281; ka&#380;demu z nich.</p>
             </div>
             <div class="bg-white rounded-2xl overflow-hidden shadow-2xl border border-forest-700 p-1 md:p-2">
                 <svg viewBox="0 0 1400 780" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto rounded-xl"
@@ -1284,6 +1284,50 @@
         <animate attributeName="opacity" values="0.5;0.15;0.5" dur="1.5s" repeatCount="indefinite"/>
     </path>
 
+    <!-- ===== A50 POSITIVE VARIANTS: W1 TURKUSOWY, W2 FIOLETOWY, W3 BRĄZOWY ===== -->
+    <!-- Przebieg schematyczny wg Akcji Informacyjnej nr 2 TRAKT/GDDKiA (09.2025) -->
+
+    <!-- Wariant 1 Turkusowy -->
+    <path d="M 0,585 C 180,602 370,615 540,620 C 680,624 780,640 845,670 L 890,700"
+          fill="none" stroke="#0d9488" stroke-width="14" opacity="0.14"/>
+    <path d="M 0,585 C 180,602 370,615 540,620 C 680,624 780,640 845,670 L 890,700"
+          fill="none" stroke="#14b8a6" stroke-width="3.5" stroke-linecap="round" opacity="0.95"/>
+    <path d="M 0,585 C 180,602 370,615 540,620 C 680,624 780,640 845,670 L 890,700"
+          fill="none" stroke="white" stroke-width="1" stroke-dasharray="7,5" opacity="0.55"/>
+
+    <!-- Wariant 2 Fioletowy -->
+    <path d="M 0,608 C 180,625 370,638 540,642 C 680,645 780,658 847,682 L 891,703"
+          fill="none" stroke="#7e22ce" stroke-width="14" opacity="0.14"/>
+    <path d="M 0,608 C 180,625 370,638 540,642 C 680,645 780,658 847,682 L 891,703"
+          fill="none" stroke="#9333ea" stroke-width="3.5" stroke-linecap="round" opacity="0.95"/>
+    <path d="M 0,608 C 180,625 370,638 540,642 C 680,645 780,658 847,682 L 891,703"
+          fill="none" stroke="white" stroke-width="1" stroke-dasharray="7,5" opacity="0.55"/>
+
+    <!-- Wariant 3 Brązowy -->
+    <path d="M 0,630 C 180,648 370,660 540,662 C 680,664 780,676 849,694 L 892,706"
+          fill="none" stroke="#78350f" stroke-width="14" opacity="0.14"/>
+    <path d="M 0,630 C 180,648 370,660 540,662 C 680,676 780,690 849,700 L 892,708"
+          fill="none" stroke="#92400e" stroke-width="3.5" stroke-linecap="round" opacity="0.95"/>
+    <path d="M 0,630 C 180,648 370,660 540,662 C 680,676 780,690 849,700 L 892,708"
+          fill="none" stroke="white" stroke-width="1" stroke-dasharray="7,5" opacity="0.55"/>
+
+    <!-- Węzeł Podole (wspólny dla W1-Turkusowy, W2, W3) -->
+    <circle cx="890" cy="703" r="13" fill="none" stroke="#475569" stroke-width="2" opacity="0.7">
+        <animate attributeName="r" values="11;16;11" dur="2.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0.25;0.7" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="890" cy="703" r="3.5" fill="#475569"/>
+    <text x="890" y="688" fill="#334155" font-size="9" font-weight="bold" text-anchor="middle"
+          paint-order="stroke" stroke="#f2efe9" stroke-width="3">Węzeł Podole</text>
+
+    <!-- Etykiety wariantów przy wejściu do gminy -->
+    <rect x="8" y="575" width="86" height="14" rx="2" fill="#14b8a6" opacity="0.92"/>
+    <text x="51" y="585" fill="white" font-size="9" font-weight="bold" text-anchor="middle">WARIANT 1 TURKUSOWY</text>
+    <rect x="8" y="599" width="86" height="14" rx="2" fill="#9333ea" opacity="0.92"/>
+    <text x="51" y="609" fill="white" font-size="9" font-weight="bold" text-anchor="middle">WARIANT 2 FIOLETOWY</text>
+    <rect x="8" y="623" width="86" height="14" rx="2" fill="#92400e" opacity="0.92"/>
+    <text x="51" y="633" fill="white" font-size="9" font-weight="bold" text-anchor="middle">WARIANT 3 BRĄZOWY</text>
+
     <!-- Węzeł Tarczyn PD -->
     <circle cx="854.2" cy="468.0" r="16" fill="none" stroke="#ef4444" stroke-width="2.5" opacity="0.7">
         <animate attributeName="r" values="14;20;14" dur="2s" repeatCount="indefinite"/>
@@ -1485,20 +1529,26 @@
     <text x="1385" y="549" fill="#999" font-size="11" text-anchor="end">Mińsk Maz. →</text>
     <text x="831" y="18" fill="#999" font-size="11" text-anchor="middle">↑ Warszawa</text>
 
-    <rect x="15" y="665" width="230" height="105" rx="6" fill="rgba(255,255,255,0.92)" stroke="#ccc" stroke-width="1"/>
-    <text x="28" y="685" fill="#333" font-size="12" font-weight="bold">LEGENDA</text>
-    <line x1="28" y1="702" x2="58" y2="702" stroke="#ef4444" stroke-width="4"/>
-    <rect x="28" y="697" width="30" height="10" fill="#ef4444" opacity="0.25" rx="2"/>
-    <text x="68" y="706" fill="#555" font-size="10">Wariant czerwony A50</text>
-    <line x1="28" y1="720" x2="58" y2="720" stroke="#d45050" stroke-width="4"/>
-    <text x="68" y="724" fill="#555" font-size="10">Droga ekspresowa S7</text>
-    <line x1="28" y1="738" x2="58" y2="738" stroke="#e8c84a" stroke-width="3"/>
-    <text x="68" y="742" fill="#555" font-size="10">Droga krajowa DK50</text>
-    <line x1="28" y1="756" x2="45" y2="756" stroke="#888" stroke-width="2.5"/>
-    <line x1="45" y1="756" x2="58" y2="756" stroke="white" stroke-width="1.5" stroke-dasharray="3,3"/>
-    <text x="68" y="760" fill="#555" font-size="10">Linia kolejowa</text>
-    <path d="M28,770 L58,770" fill="none" stroke="#9a7b6a" stroke-width="2" stroke-dasharray="5,3"/>
-    <text x="68" y="774" fill="#555" font-size="10">Granica gminy</text>
+    <rect x="15" y="648" width="260" height="130" rx="6" fill="rgba(255,255,255,0.93)" stroke="#ccc" stroke-width="1"/>
+    <text x="28" y="665" fill="#333" font-size="11" font-weight="bold">LEGENDA</text>
+    <line x1="28" y1="678" x2="58" y2="678" stroke="#ef4444" stroke-width="4"/>
+    <rect x="28" y="673" width="30" height="10" fill="#ef4444" opacity="0.25" rx="2"/>
+    <text x="66" y="682" fill="#555" font-size="9.5">W1 Czerwony (podwar. Tarczyn)</text>
+    <line x1="28" y1="692" x2="58" y2="692" stroke="#14b8a6" stroke-width="4"/>
+    <text x="66" y="695" fill="#555" font-size="9.5">Wariant 1 Turkusowy</text>
+    <line x1="28" y1="706" x2="58" y2="706" stroke="#9333ea" stroke-width="4"/>
+    <text x="66" y="709" fill="#555" font-size="9.5">Wariant 2 Fioletowy</text>
+    <line x1="28" y1="720" x2="58" y2="720" stroke="#92400e" stroke-width="4"/>
+    <text x="66" y="723" fill="#555" font-size="9.5">Wariant 3 Brązowy</text>
+    <line x1="28" y1="734" x2="58" y2="734" stroke="#d45050" stroke-width="4"/>
+    <text x="66" y="737" fill="#555" font-size="9.5">Droga ekspresowa S7</text>
+    <line x1="28" y1="748" x2="58" y2="748" stroke="#e8c84a" stroke-width="3"/>
+    <text x="66" y="751" fill="#555" font-size="9.5">Droga krajowa DK50</text>
+    <line x1="28" y1="762" x2="45" y2="762" stroke="#888" stroke-width="2.5"/>
+    <line x1="45" y1="762" x2="58" y2="762" stroke="white" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <text x="66" y="765" fill="#555" font-size="9.5">Linia kolejowa</text>
+    <path d="M28,774 L58,774" fill="none" stroke="#9a7b6a" stroke-width="2" stroke-dasharray="5,3"/>
+    <text x="66" y="777" fill="#555" font-size="9.5">Granica gminy</text>
 
     <line x1="1220" y1="760" x2="1353" y2="760" stroke="#333" stroke-width="2"/>
     <line x1="1220" y1="755" x2="1220" y2="765" stroke="#333" stroke-width="1.5"/>
@@ -1516,7 +1566,7 @@
             </div>
             <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <p class="text-forest-400 text-sm text-center">
-                    &#377;r&oacute;d&#322;o: TRAKT / GDDKiA &mdash; Akcja Informacyjna nr 2 (2025). Lasy i miejscowo&#347;ci wg OpenStreetMap.
+                    &#377;r&oacute;d&#322;o: TRAKT / GDDKiA &mdash; Akcja Informacyjna nr 2 (09.2025). Przebieg wariant&oacute;w 1 Turkusowego, 2 Fioletowego i 3 Br&#261;zowego &mdash; schematyczny. Lasy i miejscowo&#347;ci wg OpenStreetMap.
                 </p>
                 <a href="https://www.trakt.eu/oaw-dk92-s7/akcja-informacyjna-nr-2/" target="_blank" rel="noopener"
                    class="text-sm text-forest-300 hover:text-white underline">Pobierz oficjalne mapy PDF &rarr;</a>
