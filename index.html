@@ -34,34 +34,34 @@
 
     <!-- JSON-LD: Protest Event -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "Protest STOP A50 - Nie dla autostrady przez Tarczyn",
-        "description": "Pokojowa pikieta przeciwko budowie autostrady A50 w wariancie przez gminę Tarczyn. Zbieranie podpisów pod petycją do GDDKiA.",
-        "startDate": "2026-04-24T12:00:00+02:00",
-        "endDate": "2026-04-24T16:00:00+02:00",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "location": {
-            "@type": "Place",
-            "name": "ul. Wronia 53, Warszawa",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Wronia 53",
-                "addressLocality": "Warszawa",
-                "addressCountry": "PL"
-            }
-        },
-        "organizer": {
-            "@type": "Organization",
-            "name": "Inicjatywa STOP A50 Tarczyn",
-            "url": "https://stopa50.pl"
-        },
-        "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80",
-        "isAccessibleForFree": true,
-        "inLanguage": "pl"
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "Protest STOP A50 - Nie dla autostrady przez Tarczyn",
+            "description": "Pokojowa pikieta przeciwko budowie autostrady A50 w wariancie przez gminę Tarczyn. Zbieranie podpisów pod petycją do GDDKiA.",
+            "startDate": "2026-04-24T12:00:00+02:00",
+            "endDate": "2026-04-24T16:00:00+02:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "ul. Wronia 53, Warszawa",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Wronia 53",
+                    "addressLocality": "Warszawa",
+                    "addressCountry": "PL"
+                }
+            },
+            "organizer": {
+                "@type": "Organization",
+                "name": "Inicjatywa STOP A50 Tarczyn",
+                "url": "https://stopa50.pl"
+            },
+            "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80",
+            "isAccessibleForFree": true,
+            "inLanguage": "pl"
+        }
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -111,106 +111,106 @@
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-forest-950/95 backdrop-blur-sm z-50 border-b border-forest-800">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <a href="#" class="text-white font-bold text-xl tracking-tight">
-                <span class="text-red-500">STOP</span> A50
-            </a>
-            <div class="hidden md:flex items-center gap-6 text-sm">
-                <a href="#fakty" class="text-forest-200 hover:text-white transition">Fakty</a>
-                <a href="#argumenty" class="text-forest-200 hover:text-white transition">Argumenty</a>
-                <a href="#protest" class="hidden text-forest-200 hover:text-white transition">Protest</a>
-                <a href="#media" class="text-forest-200 hover:text-white transition">Media</a>
-                <a href="#faq" class="text-forest-200 hover:text-white transition">FAQ</a>
-                <a href="https://drive.google.com/drive/folders/19I_y879tPXivldcdSp8LIRI9NGWq1uUE" target="_blank" rel="noopener" class="text-forest-200 hover:text-white transition">Dane</a>
-                <a href="#kontakt" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold transition">Kontakt</a>
-            </div>
-            <button id="menu-btn" class="md:hidden text-white">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
+<!-- Navigation -->
+<nav class="fixed top-0 w-full bg-forest-950/95 backdrop-blur-sm z-50 border-b border-forest-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="#" class="text-white font-bold text-xl tracking-tight">
+            <span class="text-red-500">STOP</span> A50
+        </a>
+        <div class="hidden md:flex items-center gap-6 text-sm">
+            <a href="#fakty" class="text-forest-200 hover:text-white transition">Fakty</a>
+            <a href="#argumenty" class="text-forest-200 hover:text-white transition">Argumenty</a>
+            <a href="#nasze-protesty" class="text-forest-200 hover:text-white transition">Nasze protesty</a>
+            <a href="#media" class="text-forest-200 hover:text-white transition">Media</a>
+            <a href="#faq" class="text-forest-200 hover:text-white transition">FAQ</a>
+            <a href="https://drive.google.com/drive/folders/19I_y879tPXivldcdSp8LIRI9NGWq1uUE" target="_blank" rel="noopener" class="text-forest-200 hover:text-white transition">Dane</a>
+            <a href="#kontakt" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold transition">Kontakt</a>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-forest-950 border-t border-forest-800 px-4 pb-4">
-            <a href="#fakty" class="block py-2 text-forest-200 hover:text-white">Fakty</a>
-            <a href="#argumenty" class="block py-2 text-forest-200 hover:text-white">Argumenty</a>
-            <a href="#protest" class="hidden py-2 text-forest-200 hover:text-white">Protest</a>
-            <a href="#media" class="block py-2 text-forest-200 hover:text-white">Media</a>
-            <a href="#faq" class="block py-2 text-forest-200 hover:text-white">FAQ</a>
-            <a href="https://drive.google.com/drive/folders/19I_y879tPXivldcdSp8LIRI9NGWq1uUE" target="_blank" rel="noopener" class="block py-2 text-forest-200 hover:text-white">Dane</a>
-            <a href="#kontakt" class="block py-2 text-red-400 hover:text-red-300 font-semibold">Kontakt</a>
-        </div>
-    </nav>
-
-    <!-- Hero -->
-    <header class="hero-bg min-h-screen flex items-center justify-center text-center px-4 pt-16 relative overflow-hidden">
-        <div class="absolute bottom-0 left-0 right-0 opacity-10">
-            <svg viewBox="0 0 1200 200" class="w-full" fill="white">
-                <path d="M0,200 L50,200 L50,120 L25,120 L60,60 L35,60 L65,0 L95,60 L70,60 L105,120 L80,120 L80,200 L130,200 L130,140 L110,140 L140,90 L120,90 L145,40 L170,90 L150,90 L180,140 L160,140 L160,200 L220,200 L220,130 L200,130 L230,70 L210,70 L240,10 L270,70 L250,70 L280,130 L260,130 L260,200 L320,200 L320,150 L300,150 L335,95 L315,95 L345,35 L375,95 L355,95 L390,150 L370,150 L370,200 L440,200 L440,120 L420,120 L455,55 L435,55 L470,0 L505,55 L485,55 L520,120 L500,120 L500,200 L560,200 L560,145 L540,145 L575,85 L555,85 L590,25 L625,85 L605,85 L640,145 L620,145 L620,200 L680,200 L680,130 L660,130 L695,65 L675,65 L710,5 L745,65 L725,65 L760,130 L740,130 L740,200 L800,200 L800,155 L780,155 L815,100 L795,100 L830,40 L865,100 L845,100 L880,155 L860,155 L860,200 L920,200 L920,125 L900,125 L935,60 L915,60 L950,0 L985,60 L965,60 L1000,125 L980,125 L980,200 L1040,200 L1040,140 L1020,140 L1055,80 L1035,80 L1070,20 L1105,80 L1085,80 L1120,140 L1100,140 L1100,200 L1200,200Z"/>
+        <button id="menu-btn" class="md:hidden text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
-        </div>
-        <div class="relative z-10 max-w-4xl">
-            <div class="hidden bg-red-600 text-white text-sm font-bold px-4 py-1 rounded-full mb-6 pulse-slow">
-                PROTEST 24 KWIETNIA 2026 - WARSZAWA
-            </div>
-            <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
-                <span class="text-red-500">STOP</span> A50<br>
-                <span class="text-2xl md:text-4xl font-bold text-forest-200">przez Gmin&#281; Tarczyn, Pra&#380;m&oacute;w, p&oacute;&#322;nocn&#261; cz&#281;&#347;&#263; gminy Gr&oacute;jec <span class="text-lg md:text-2xl font-semibold">i inne tereny zagro&#380;one wariantami 1, 2, 3</span></span>
-            </h1>
-            <p class="text-xl md:text-2xl text-forest-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-                Nie pozwolimy na zniszczenie naszych dom&oacute;w, las&oacute;w i przysz&#322;o&#347;ci.
-                <strong class="text-white">600 hektar&oacute;w las&oacute;w, setki rodzin, 7 miejscowo&#347;ci</strong> &mdash; to cena, kt&oacute;rej nie zap&#322;acimy.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#protest" class="hidden bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition shadow-lg shadow-red-900/30">
-                    Do&#322;&#261;cz do protestu
-                </a>
-                <a href="#argumenty" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold transition border border-white/20">
-                    Poznaj fakty
-                </a>
-            </div>
-        </div>
-    </header>
+        </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-forest-950 border-t border-forest-800 px-4 pb-4">
+        <a href="#fakty" class="block py-2 text-forest-200 hover:text-white">Fakty</a>
+        <a href="#argumenty" class="block py-2 text-forest-200 hover:text-white">Argumenty</a>
+        <a href="#nasze-protesty" class="py-2 text-forest-200 hover:text-white">Nasze protesty</a>
+        <a href="#media" class="block py-2 text-forest-200 hover:text-white">Media</a>
+        <a href="#faq" class="block py-2 text-forest-200 hover:text-white">FAQ</a>
+        <a href="https://drive.google.com/drive/folders/19I_y879tPXivldcdSp8LIRI9NGWq1uUE" target="_blank" rel="noopener" class="block py-2 text-forest-200 hover:text-white">Dane</a>
+        <a href="#kontakt" class="block py-2 text-red-400 hover:text-red-300 font-semibold">Kontakt</a>
+    </div>
+</nav>
 
-    <!-- Key Facts Bar -->
-    <section id="fakty" class="bg-forest-900 text-white py-12">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-4xl md:text-5xl font-black text-red-400">600</div>
-                    <div class="text-forest-200 mt-1">hektar&oacute;w las&oacute;w do wycinki</div>
-                </div>
-                <div>
-                    <div class="text-4xl md:text-5xl font-black text-red-400">70</div>
-                    <div class="text-forest-200 mt-1">lat &mdash; &#347;redni wiek drzew</div>
-                </div>
-                <div>
-                    <div class="text-4xl md:text-5xl font-black text-red-400">7</div>
-                    <div class="text-forest-200 mt-1">miejscowo&#347;ci zagro&#380;onych</div>
-                </div>
-                <div>
-                    <div class="text-4xl md:text-5xl font-black text-red-400">100+</div>
-                    <div class="text-forest-200 mt-1">rodzin do przesiedlenia</div>
-                </div>
+<!-- Hero -->
+<header class="hero-bg min-h-screen flex items-center justify-center text-center px-4 pt-16 relative overflow-hidden">
+    <div class="absolute bottom-0 left-0 right-0 opacity-10">
+        <svg viewBox="0 0 1200 200" class="w-full" fill="white">
+            <path d="M0,200 L50,200 L50,120 L25,120 L60,60 L35,60 L65,0 L95,60 L70,60 L105,120 L80,120 L80,200 L130,200 L130,140 L110,140 L140,90 L120,90 L145,40 L170,90 L150,90 L180,140 L160,140 L160,200 L220,200 L220,130 L200,130 L230,70 L210,70 L240,10 L270,70 L250,70 L280,130 L260,130 L260,200 L320,200 L320,150 L300,150 L335,95 L315,95 L345,35 L375,95 L355,95 L390,150 L370,150 L370,200 L440,200 L440,120 L420,120 L455,55 L435,55 L470,0 L505,55 L485,55 L520,120 L500,120 L500,200 L560,200 L560,145 L540,145 L575,85 L555,85 L590,25 L625,85 L605,85 L640,145 L620,145 L620,200 L680,200 L680,130 L660,130 L695,65 L675,65 L710,5 L745,65 L725,65 L760,130 L740,130 L740,200 L800,200 L800,155 L780,155 L815,100 L795,100 L830,40 L865,100 L845,100 L880,155 L860,155 L860,200 L920,200 L920,125 L900,125 L935,60 L915,60 L950,0 L985,60 L965,60 L1000,125 L980,125 L980,200 L1040,200 L1040,140 L1020,140 L1055,80 L1035,80 L1070,20 L1105,80 L1085,80 L1120,140 L1100,140 L1100,200 L1200,200Z"/>
+        </svg>
+    </div>
+    <div class="relative z-10 max-w-4xl">
+        <div class="hidden bg-red-600 text-white text-sm font-bold px-4 py-1 rounded-full mb-6 pulse-slow">
+            PROTEST 24 KWIETNIA 2026 - WARSZAWA
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+            <span class="text-red-500">STOP</span> A50<br>
+            <span class="text-2xl md:text-4xl font-bold text-forest-200">przez Gmin&#281; Tarczyn, Pra&#380;m&oacute;w, p&oacute;&#322;nocn&#261; cz&#281;&#347;&#263; gminy Gr&oacute;jec <span class="text-lg md:text-2xl font-semibold">i inne tereny zagro&#380;one wariantami 1, 2, 3</span></span>
+        </h1>
+        <p class="text-xl md:text-2xl text-forest-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Nie pozwolimy na zniszczenie naszych dom&oacute;w, las&oacute;w i przysz&#322;o&#347;ci.
+            <strong class="text-white">600 hektar&oacute;w las&oacute;w, setki rodzin, 7 miejscowo&#347;ci</strong> &mdash; to cena, kt&oacute;rej nie zap&#322;acimy.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#protest" class="hidden bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl text-lg font-bold transition shadow-lg shadow-red-900/30">
+                Do&#322;&#261;cz do protestu
+            </a>
+            <a href="#argumenty" class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl text-lg font-semibold transition border border-white/20">
+                Poznaj fakty
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Key Facts Bar -->
+<section id="fakty" class="bg-forest-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl md:text-5xl font-black text-red-400">600</div>
+                <div class="text-forest-200 mt-1">hektar&oacute;w las&oacute;w do wycinki</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-black text-red-400">70</div>
+                <div class="text-forest-200 mt-1">lat &mdash; &#347;redni wiek drzew</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-black text-red-400">7</div>
+                <div class="text-forest-200 mt-1">miejscowo&#347;ci zagro&#380;onych</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-black text-red-400">100+</div>
+                <div class="text-forest-200 mt-1">rodzin do przesiedlenia</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Intro -->
-    <section class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-forest-900 mb-6">To nie jest rozw&oacute;j &mdash; to degradacja</h2>
-            <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                Planowana autostrada A50 w wariancie przez gmin&#281; Tarczyn oznacza zniszczenie setek hektar&oacute;w las&oacute;w,
-                wyburzenia dom&oacute;w, ingerencj&#281; w obszary chronione i naruszenie przepis&oacute;w. Istniej&#261; lepsze alternatywy
-                &mdash; ale s&#261; ignorowane. <strong class="text-forest-800">Nie zgadzamy si&#281; na to.</strong>
-            </p>
-        </div>
-    </section>
+<!-- Intro -->
+<section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-forest-900 mb-6">To nie jest rozw&oacute;j &mdash; to degradacja</h2>
+        <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            Planowana autostrada A50 w wariancie przez gmin&#281; Tarczyn oznacza zniszczenie setek hektar&oacute;w las&oacute;w,
+            wyburzenia dom&oacute;w, ingerencj&#281; w obszary chronione i naruszenie przepis&oacute;w. Istniej&#261; lepsze alternatywy
+            &mdash; ale s&#261; ignorowane. <strong class="text-forest-800">Nie zgadzamy si&#281; na to.</strong>
+        </p>
+    </div>
+</section>
 
-    <!-- ===================== ARGUMENTS SECTIONS ===================== -->
-    <div id="argumenty">
+<!-- ===================== ARGUMENTS SECTIONS ===================== -->
+<div id="argumenty">
 
     <!-- Argument 1: Wycinka lasów -->
     <section class="bg-white">
@@ -520,653 +520,718 @@
         </div>
     </section>
 
+</div>
+<!-- ===================== END ARGUMENTS ===================== -->
+
+
+<!-- Oficjalne mapy wariantów TRAKT/GDDKiA -->
+<section class="py-20 bg-forest-900">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Oficjalne mapy wariant&oacute;w &mdash; TRAKT / GDDKiA</h2>
+            <p class="text-forest-300 text-lg">Akcja Informacyjna nr 2 (wrzesie&#324; 2025). Kliknij w map&#281;, aby pobra&#263; oficjalny PDF.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <a href="https://www.trakt.eu/oaw-dk92-s7/wp-content/uploads/2025/09/OAW-A50_war-1_Tarczyn_-CZERWONY_12_TARCZYN_ark-07.pdf"
+               target="_blank" rel="noopener"
+               class="block bg-forest-800 rounded-xl overflow-hidden shadow-lg border border-forest-700 hover:border-red-500 transition group">
+                <div class="flex items-baseline gap-2 px-4 py-3 bg-red-600">
+                    <span class="text-white font-bold text-lg">Wariant 1 Czerwony</span>
+                    <span class="text-red-100 text-sm">&mdash; podwariant Tarczyn</span>
+                </div>
+                <img src="/maps/czerwony.jpg" alt="Mapa wariantu czerwonego A50 przez gmin&#281; Tarczyn (arkusz 07)"
+                     class="w-full h-auto bg-white" loading="lazy">
+                <div class="px-4 py-3 text-forest-300 text-sm flex items-center justify-between">
+                    <span>PDF &middot; arkusz 07 (gm. Tarczyn)</span>
+                    <span class="group-hover:text-white">Pobierz &rarr;</span>
+                </div>
+            </a>
+
+            <a href="https://www.trakt.eu/oaw-dk92-s7/wp-content/uploads/2025/09/OAW-A50_war-1-TURKUSOWY_12_TARCZYN_ark-07.pdf"
+               target="_blank" rel="noopener"
+               class="block bg-forest-800 rounded-xl overflow-hidden shadow-lg border border-forest-700 hover:border-teal-400 transition group">
+                <div class="flex items-baseline gap-2 px-4 py-3" style="background:#0d9488">
+                    <span class="text-white font-bold text-lg">Wariant 1 Turkusowy</span>
+                    <span class="text-teal-100 text-sm">&mdash; alternatywny korytarz W1</span>
+                </div>
+                <img src="/maps/turkusowy.jpg" alt="Mapa wariantu 1 turkusowego A50 przez gmin&#281; Tarczyn (arkusz 07)"
+                     class="w-full h-auto bg-white" loading="lazy">
+                <div class="px-4 py-3 text-forest-300 text-sm flex items-center justify-between">
+                    <span>PDF &middot; arkusz 07 (gm. Tarczyn)</span>
+                    <span class="group-hover:text-white">Pobierz &rarr;</span>
+                </div>
+            </a>
+
+            <a href="https://www.trakt.eu/oaw-dk92-s7/wp-content/uploads/2025/09/OAW-A50_war-2-FIOLETOWY_12_TARCZYN_ark-07.pdf"
+               target="_blank" rel="noopener"
+               class="block bg-forest-800 rounded-xl overflow-hidden shadow-lg border border-forest-700 hover:border-purple-400 transition group">
+                <div class="flex items-baseline gap-2 px-4 py-3" style="background:#7e22ce">
+                    <span class="text-white font-bold text-lg">Wariant 2 Fioletowy</span>
+                    <span class="text-purple-100 text-sm">&mdash; &#347;rodkowy korytarz</span>
+                </div>
+                <img src="/maps/fioletowy.jpg" alt="Mapa wariantu 2 fioletowego A50 przez gmin&#281; Tarczyn (arkusz 07)"
+                     class="w-full h-auto bg-white" loading="lazy">
+                <div class="px-4 py-3 text-forest-300 text-sm flex items-center justify-between">
+                    <span>PDF &middot; arkusz 07 (gm. Tarczyn)</span>
+                    <span class="group-hover:text-white">Pobierz &rarr;</span>
+                </div>
+            </a>
+
+            <a href="https://www.trakt.eu/oaw-dk92-s7/wp-content/uploads/2025/09/OAW-A50_war-3-BRAZOWY_12_TARCZYN_ark-07.pdf"
+               target="_blank" rel="noopener"
+               class="block bg-forest-800 rounded-xl overflow-hidden shadow-lg border border-forest-700 hover:border-amber-600 transition group">
+                <div class="flex items-baseline gap-2 px-4 py-3" style="background:#78350f">
+                    <span class="text-white font-bold text-lg">Wariant 3 Br&#261;zowy</span>
+                    <span class="text-amber-100 text-sm">&mdash; po&#322;udniowy korytarz</span>
+                </div>
+                <img src="/maps/brazowy.jpg" alt="Mapa wariantu 3 br&#261;zowego A50 przez gmin&#281; Tarczyn (arkusz 07)"
+                     class="w-full h-auto bg-white" loading="lazy">
+                <div class="px-4 py-3 text-forest-300 text-sm flex items-center justify-between">
+                    <span>PDF &middot; arkusz 07 (gm. Tarczyn)</span>
+                    <span class="group-hover:text-white">Pobierz &rarr;</span>
+                </div>
+            </a>
+        </div>
+        <div class="text-center mt-8">
+            <a href="https://www.trakt.eu/oaw-dk92-s7/akcja-informacyjna-nr-2/" target="_blank" rel="noopener"
+               class="inline-block text-forest-300 hover:text-white underline text-sm">
+                Wszystkie arkusze (ark-06, 07, 07a) i plan orientacyjny &mdash; trakt.eu &rarr;
+            </a>
+        </div>
     </div>
-    <!-- ===================== END ARGUMENTS ===================== -->
+</section>
 
 
-    <!-- Oficjalne mapy wariantów TRAKT/GDDKiA -->
-    <section class="py-20 bg-forest-900">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Oficjalne mapy wariant&oacute;w &mdash; TRAKT / GDDKiA</h2>
-                <p class="text-forest-300 text-lg">Akcja Informacyjna nr 2 (wrzesie&#324; 2025). Kliknij w map&#281;, aby pobra&#263; oficjalny PDF.</p>
+<!-- Nasze protesty -->
+<section id="nasze-protesty" class="py-20 bg-forest-50">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <div class="inline-block bg-red-100 text-red-700 text-xs font-bold px-3 py-1 rounded-full mb-4">
+                DZIAŁAMY
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <a href="https://www.trakt.eu/oaw-dk92-s7/wp-content/uploads/2025/09/OAW-A50_war-1_Tarczyn_-CZERWONY_12_TARCZYN_ark-07.pdf"
-                   target="_blank" rel="noopener"
-                   class="block bg-forest-800 rounded-xl overflow-hidden shadow-lg border border-forest-700 hover:border-red-500 transition group">
-                    <div class="flex items-baseline gap-2 px-4 py-3 bg-red-600">
-                        <span class="text-white font-bold text-lg">Wariant 1 Czerwony</span>
-                        <span class="text-red-100 text-sm">&mdash; podwariant Tarczyn</span>
-                    </div>
-                    <img src="/maps/czerwony.jpg" alt="Mapa wariantu czerwonego A50 przez gmin&#281; Tarczyn (arkusz 07)"
-                         class="w-full h-auto bg-white" loading="lazy">
-                    <div class="px-4 py-3 text-forest-300 text-sm flex items-center justify-between">
-                        <span>PDF &middot; arkusz 07 (gm. Tarczyn)</span>
-                        <span class="group-hover:text-white">Pobierz &rarr;</span>
-                    </div>
-                </a>
+            <h2 class="text-3xl md:text-4xl font-bold text-forest-900 mb-4">
+                Nasze protesty
+            </h2>
+            <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                Od miesięcy mieszkańcy gmin Tarczyn, Prażmów i okolic organizują protesty,
+                pikiety i spotkania informacyjne. Nasz sprzeciw jest pokojowy, ale stanowczy —
+                nie zgadzamy się na niszczenie naszych domów, lasów i przyszłości.
+            </p>
+        </div>
 
-                <a href="https://www.trakt.eu/oaw-dk92-s7/wp-content/uploads/2025/09/OAW-A50_war-1-TURKUSOWY_12_TARCZYN_ark-07.pdf"
-                   target="_blank" rel="noopener"
-                   class="block bg-forest-800 rounded-xl overflow-hidden shadow-lg border border-forest-700 hover:border-teal-400 transition group">
-                    <div class="flex items-baseline gap-2 px-4 py-3" style="background:#0d9488">
-                        <span class="text-white font-bold text-lg">Wariant 1 Turkusowy</span>
-                        <span class="text-teal-100 text-sm">&mdash; alternatywny korytarz W1</span>
-                    </div>
-                    <img src="/maps/turkusowy.jpg" alt="Mapa wariantu 1 turkusowego A50 przez gmin&#281; Tarczyn (arkusz 07)"
-                         class="w-full h-auto bg-white" loading="lazy">
-                    <div class="px-4 py-3 text-forest-300 text-sm flex items-center justify-between">
-                        <span>PDF &middot; arkusz 07 (gm. Tarczyn)</span>
-                        <span class="group-hover:text-white">Pobierz &rarr;</span>
-                    </div>
-                </a>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-2xl shadow-lg border border-forest-200 p-8">
+                <div class="text-sm font-bold text-red-600 mb-3">10 MAJA 2026</div>
+                <h3 class="text-2xl font-bold text-forest-900 mb-4">
+                    Protest mieszkańców przeciw przebiegowi obwodnicy
+                </h3>
+                <p class="text-gray-600 leading-relaxed mb-5">
+                    Kolejny protest mieszkańców przeciwko planowanemu przebiegowi
+                    Obwodnicy Aglomeracji Warszawskiej. Mieszkańcy podkreślali zagrożenie
+                    dla domów, terenów zielonych i lokalnych społeczności.
+                </p>
 
-                <a href="https://www.trakt.eu/oaw-dk92-s7/wp-content/uploads/2025/09/OAW-A50_war-2-FIOLETOWY_12_TARCZYN_ark-07.pdf"
-                   target="_blank" rel="noopener"
-                   class="block bg-forest-800 rounded-xl overflow-hidden shadow-lg border border-forest-700 hover:border-purple-400 transition group">
-                    <div class="flex items-baseline gap-2 px-4 py-3" style="background:#7e22ce">
-                        <span class="text-white font-bold text-lg">Wariant 2 Fioletowy</span>
-                        <span class="text-purple-100 text-sm">&mdash; &#347;rodkowy korytarz</span>
-                    </div>
-                    <img src="/maps/fioletowy.jpg" alt="Mapa wariantu 2 fioletowego A50 przez gmin&#281; Tarczyn (arkusz 07)"
-                         class="w-full h-auto bg-white" loading="lazy">
-                    <div class="px-4 py-3 text-forest-300 text-sm flex items-center justify-between">
-                        <span>PDF &middot; arkusz 07 (gm. Tarczyn)</span>
-                        <span class="group-hover:text-white">Pobierz &rarr;</span>
-                    </div>
-                </a>
+                <blockquote class="border-l-4 border-red-500 pl-4 italic text-gray-700 mb-5">
+                    „Nie chcemy autostrady pod oknami i nie zgadzamy się na niszczenie naszych miejscowości.”
+                </blockquote>
 
-                <a href="https://www.trakt.eu/oaw-dk92-s7/wp-content/uploads/2025/09/OAW-A50_war-3-BRAZOWY_12_TARCZYN_ark-07.pdf"
-                   target="_blank" rel="noopener"
-                   class="block bg-forest-800 rounded-xl overflow-hidden shadow-lg border border-forest-700 hover:border-amber-600 transition group">
-                    <div class="flex items-baseline gap-2 px-4 py-3" style="background:#78350f">
-                        <span class="text-white font-bold text-lg">Wariant 3 Br&#261;zowy</span>
-                        <span class="text-amber-100 text-sm">&mdash; po&#322;udniowy korytarz</span>
-                    </div>
-                    <img src="/maps/brazowy.jpg" alt="Mapa wariantu 3 br&#261;zowego A50 przez gmin&#281; Tarczyn (arkusz 07)"
-                         class="w-full h-auto bg-white" loading="lazy">
-                    <div class="px-4 py-3 text-forest-300 text-sm flex items-center justify-between">
-                        <span>PDF &middot; arkusz 07 (gm. Tarczyn)</span>
-                        <span class="group-hover:text-white">Pobierz &rarr;</span>
-                    </div>
+                <a href="https://warszawa.tvp.pl/93178698/protest-mieszkancow-przeciwko-przebiegowi-obwodnicy-aglomeracji-warszawskiej-pod-warszawa"
+                   target="_blank"
+                   rel="noopener"
+                   class="inline-block text-red-600 font-semibold hover:text-red-800 underline">
+                    Zobacz materiał TVP Warszawa →
                 </a>
             </div>
-            <div class="text-center mt-8">
-                <a href="https://www.trakt.eu/oaw-dk92-s7/akcja-informacyjna-nr-2/" target="_blank" rel="noopener"
-                   class="inline-block text-forest-300 hover:text-white underline text-sm">
-                    Wszystkie arkusze (ark-06, 07, 07a) i plan orientacyjny &mdash; trakt.eu &rarr;
-                </a>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-forest-200 p-8">
+                <div class="text-sm font-bold text-red-600 mb-3">24 KWIETNIA 2026</div>
+                <h3 class="text-2xl font-bold text-forest-900 mb-4">
+                    Pikieta pod siedzibą GDDKiA
+                </h3>
+                <p class="text-gray-600 leading-relaxed mb-5">
+                    Setki mieszkańców przyjechały do Warszawy, by zaprotestować przeciwko
+                    forsowanym wariantom A50. Domagaliśmy się realnych konsultacji
+                    społecznych i rozważenia mniej szkodliwych alternatyw.
+                </p>
+
+                <ul class="space-y-2 text-gray-600">
+                    <li>✔ setki uczestników</li>
+                    <li>✔ obecność mediów</li>
+                    <li>✔ przekazanie postulatów do GDDKiA</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Piszą o nas -->
-    <section id="media" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <div class="inline-block bg-forest-100 text-forest-700 text-xs font-bold px-3 py-1 rounded-full mb-4">MEDIA O PROTE&#346;CIE</div>
-                <h2 class="text-3xl md:text-4xl font-bold text-forest-900 mb-4">Pisz&#261; o nas</h2>
-                <p class="text-gray-600 text-lg max-w-2xl mx-auto">Nasz sprzeciw s&#322;yszy coraz szersze grono &mdash; oto wyb&oacute;r artyku&#322;&oacute;w, kt&oacute;re opisuj&#261; spraw&#281; A50 i g&#322;os mieszka&#324;c&oacute;w.</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <a href="https://wydarzenia.interia.pl/mazowieckie/news-mieszkancy-kontra-wielka-inwestycja-ledwo-wybudowali-domy-a,nId,23329457"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">INTERIA WYDARZENIA</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Mieszka&#324;cy kontra wielka inwestycja. Ledwo wybudowali domy, a ju&#380; grozi im wyw&#322;aszczenie</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Rodziny spod Warszawy, kt&oacute;re niedawno postawi&#322;y domy, stoj&#261; przed widmem wyw&#322;aszczenia pod budow&#281; A50 &mdash; wci&#261;&#380; sp&#322;acaj&#261; kredyty.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na interia.pl &rarr;</span>
-                </a>
 
-                <a href="https://warszawa.tvp.pl/92523280/nie-chca-autostrady-pod-oknami-mieszkancy-prazmowa-protestuja"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Nie chc&#261; autostrady pod oknami. Mieszka&#324;cy Pra&#380;mowa protestuj&#261;</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Materia&#322; TVP Warszawa o mieszka&#324;cach gminy Pra&#380;m&oacute;w, kt&oacute;rzy nie godz&#261; si&#281; na poprowadzenie A50 tu&#380; pod ich oknami.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
-                </a>
 
-                <a href="https://www.przegladpiaseczynski.pl/artykul/15724,kolejny-protest-przeciw-a50-mieszkancy-jada-do-warszawy"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">PRZEGL&#260;D PIASECZY&#323;SKI</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Kolejny protest przeciw A50. Mieszka&#324;cy jad&#261; do Warszawy</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Zapowied&#378; pikiety 24 kwietnia 2026 &mdash; mieszka&#324;cy trzech gmin jad&#261; pod siedzib&#281; GDDKiA w Warszawie.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na przegladpiaseczynski.pl &rarr;</span>
-                </a>
-
-                <a href="https://www.se.pl/warszawa/dramat-setek-rodzin-pod-warszawa-nowa-autostrada-zburzy-ich-domy-zyjemy-na-bombie-aa-fMfP-v8LM-cbgn.html"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">SUPER EXPRESS</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Dramat setek rodzin pod Warszaw&#261;. Nowa autostrada zburzy ich domy. &bdquo;&#379;yjemy na bombie&rdquo;</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Reporta&#380; o rodzinach, kt&oacute;re po latach budowania &#380;ycia mog&#261; straci&#263; dom pod walec inwestycji.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na se.pl &rarr;</span>
-                </a>
-
-                <a href="https://warszawa.tvp.pl/92893480/protest-setek-mieszkancow-uwazam-ze-jestesmy-dreczeni"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest setek mieszka&#324;c&oacute;w. &bdquo;Uwa&#380;am, &#380;e jeste&#347;my dr&#281;czeni&rdquo;</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Relacja TVP Warszawa z pikiety 24 kwietnia &mdash; setki mieszka&#324;c&oacute;w m&oacute;wi&#261; o latach niepewno&#347;ci.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
-                </a>
-
-                <a href="https://tvn24.pl/tvnwarszawa/okolice/obwodnica-aglomeracji-warszawskiej-mieszkancow-gmin-protestuja-st9015196"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVN24 WARSZAWA</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest mieszka&#324;c&oacute;w gmin Pra&#380;m&oacute;w i Tarczyn. Boj&#261; si&#281;, &#380;e zostan&#261; wysiedleni</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">TVN24 o obawach mieszka&#324;c&oacute;w dw&oacute;ch gmin: trasa A50 mo&#380;e oznacza&#263; konieczno&#347;&#263; opuszczenia dom&oacute;w.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na tvn24.pl &rarr;</span>
-                </a>
-
-                <a href="https://www.rdc.pl/aktualnosci/warszawa/boja-sie-ze-straca-swoje-domy-mieszkancy-gmin-pod-warszawa-przeciwni-budowie-a50_xjVmhPOZLxQE7CBn5KEj"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">RADIO DLA CIEBIE</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Boj&#261; si&#281;, &#380;e strac&#261; swoje domy. Mieszka&#324;cy gmin pod Warszaw&#261; przeciwni A50</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">RDC: protest gmin przeciwko budowie trasy A50 i ryzyku utraty dom&oacute;w pod inwestycj&#281;.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">S&#322;uchaj na rdc.pl &rarr;</span>
-                </a>
-
-                <a href="https://piasecznonews.pl/pl/848_prazmow/112734_protest-mieszkancow-przeciw-planowanemu-przebiegowi-a50-przez-gmine-prazmow.html"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">PIASECZNO NEWS</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest mieszka&#324;c&oacute;w przeciw planowanemu przebiegowi A50 przez gm. Pra&#380;m&oacute;w</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Lokalna relacja z dzia&#322;a&#324; mieszka&#324;c&oacute;w gminy Pra&#380;m&oacute;w przeciwko proponowanej trasie A50.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na piasecznonews.pl &rarr;</span>
-                </a>
-
-                <a href="https://m.facebook.com/story.php?story_fbid=pfbid028wK5NhKHvGDnYY8ydRREYRgRiQhpLsaLGcqw8ofFADF7hzuRuqXYzE2gmFjz5XAfl&amp;id=100063526749670"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">FACEBOOK</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Wpis o prote&#347;cie przeciwko A50</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Post w mediach spo&#322;eczno&#347;ciowych dokumentuj&#261;cy g&#322;os mieszka&#324;c&oacute;w przeciw A50.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na Facebooku &rarr;</span>
-                </a>
-
-                <a href="https://warszawa.tvp.pl/92898641/zawsze-na-temat-tvp3-warszawa-24042026-protest-przeciwko-przebiegowi-autostrady-a50"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">&bdquo;Zawsze na temat&rdquo; (24.04.2026) &mdash; protest przeciwko przebiegowi A50</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Wydanie programu &bdquo;Zawsze na temat&rdquo; po&#347;wi&#281;cone protestowi pod GDDKiA przeciw planom przebiegu A50.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
-                </a>
-
-                <a href="https://warszawa.tvp.pl/92898120/reagujemy-tvp3-warszawa-24042026-protest-autostrada-a50"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">&bdquo;Reagujemy&rdquo; (24.04.2026) &mdash; protest, autostrada A50</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Materia&#322; programu &bdquo;Reagujemy&rdquo; z dnia protestu &mdash; rozmowy z mieszka&#324;cami pod siedzib&#261; GDDKiA.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
-                </a>
-
-                <a href="https://www.facebook.com/share/p/1B3XqWMjYg/"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">FACEBOOK</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Wpis o protestach mieszka&#324;c&oacute;w</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Udost&#281;pniony post o sprzeciwie wobec planowanej trasy A50.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na Facebooku &rarr;</span>
-                </a>
-
-                <a href="https://www.rynekinfrastruktury.pl/wiadomosci/drogi-i-autostrady/beda-protestowac-przeciwko-wariantom-a50-obwodnicy-aglomeracji-warszawskiej-99513.html"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">RYNEK INFRASTRUKTURY</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">B&#281;d&#261; protestowa&#263; przeciwko wariantom A50 Obwodnicy Aglomeracji Warszawskiej</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Bran&#380;owy serwis o zapowiedzianych protestach przeciwko wariantom A50.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na rynekinfrastruktury.pl &rarr;</span>
-                </a>
-
-                <a href="https://moto.pl/MotoPL/7,190330,32715997,drogowcy-sie-doigrali-beda-protesty-przeciwko-obwodnicy-aglomeracji.html"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">MOTO.PL</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Drogowcy si&#281; doigrali. B&#281;d&#261; protesty przeciwko Obwodnicy Aglomeracji</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">moto.pl: rosn&#261;cy spo&#322;eczny sprzeciw wobec wariant&oacute;w A50 zaproponowanych przez GDDKiA.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na moto.pl &rarr;</span>
-                </a>
-
-                <a href="https://piasecznonews.pl/pl/848_prazmow/112410_wazne-dla-mieszkancow-prazmowa.html"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">PIASECZNO NEWS</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Wa&#380;ne dla mieszka&#324;c&oacute;w Pra&#380;mowa</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Komunikat dla mieszka&#324;c&oacute;w gminy Pra&#380;m&oacute;w w sprawie planowanego przebiegu A50.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na piasecznonews.pl &rarr;</span>
-                </a>
-
-                <a href="https://ewarszawa.pl/news-news-4922-te_domy_trzeba_bedzie_wyburzyc_aby_zbudowac_obwodnice_warszawy_mieszkancy_zapowiedzieli_protest"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">EWARSZAWA</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Te domy trzeba b&#281;dzie wyburzy&#263;, aby zbudowa&#263; Obwodnic&#281; Warszawy. Mieszka&#324;cy zapowiedzieli protest</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">eWarszawa o domach przeznaczonych pod wyburzenie i zapowiadanym sprzeciwie mieszka&#324;c&oacute;w.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na ewarszawa.pl &rarr;</span>
-                </a>
-
-                <a href="https://informacje.wp.pl/tarczyn-autostrada-przez-domy-i-pola-to-wyrok-dla-naszej-gminy-7256066545377857a"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">WP INFORMACJE</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Tarczyn. Autostrada przez domy i pola: &bdquo;To wyrok dla naszej gminy&rdquo;</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Wirtualna Polska o tym, jak A50 mo&#380;e przeci&#261;&#263; gmin&#281; Tarczyn &mdash; rozmowy z mieszka&#324;cami.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na wp.pl &rarr;</span>
-                </a>
-
-                <a href="https://agronews.com.pl/artykul/autostrada-przez-domy-i-pola-mieszkancy-tarczyna-to-wyrok-dla-naszej-gminy/"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">AGRONEWS</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Autostrada przez domy i pola. Mieszka&#324;cy Tarczyna: &bdquo;To wyrok dla naszej gminy&rdquo;</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Agronews o uderzeniu autostrady w gospodarstwa rolne i zabudow&#281; gminy Tarczyn.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na agronews.com.pl &rarr;</span>
-                </a>
-
-                <a href="https://warszawa.tvp.pl/91577992/reagujemy-mieszkancy-gminy-tarczyn-w-walce-z-gddkia"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">&bdquo;Reagujemy&rdquo; &mdash; Mieszka&#324;cy gminy Tarczyn w walce z GDDKiA</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Materia&#322; programu &bdquo;Reagujemy&rdquo; o sporze gminy Tarczyn z GDDKiA o przebieg A50.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
-                </a>
-
-                <a href="https://warszawa.tvp.pl/91567725/reagujemy-tvp3-warszawa-13022026-protest-mieszkancow-gminy-tarczyn"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">&bdquo;Reagujemy&rdquo; (13.02.2026) &mdash; protest mieszka&#324;c&oacute;w gminy Tarczyn</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Wydanie programu &bdquo;Reagujemy&rdquo; z lutego 2026 &mdash; sprzeciw mieszka&#324;c&oacute;w gminy Tarczyn wobec A50.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
-                </a>
-
-                <a href="https://warszawa.naszemiasto.pl/protest-pod-ministerstwem-i-gddkia-ta-autostrada-ma-polaczyc-cpk-z-warszawa-mieszkancy-mowia-nie-a50/ar/c1p2-28644591"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">WARSZAWA NASZE MIASTO</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest pod ministerstwem i GDDKiA. Mieszka&#324;cy m&oacute;wi&#261; &bdquo;nie&rdquo; A50</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Autostrada ma po&#322;&#261;czy&#263; CPK z Warszaw&#261; &mdash; mieszka&#324;cy gmin pod stolic&#261; m&oacute;wi&#261; do&#347;&#263;.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na warszawa.naszemiasto.pl &rarr;</span>
-                </a>
-
-                <a href="https://tvn24.pl/tvnwarszawa/srodmiescie/warszawa-protest-mieszkancow-przeciwko-budowie-autostrady-a50-st8852112"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVN24 WARSZAWA</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Warszawa. Protest mieszka&#324;c&oacute;w przeciwko budowie autostrady A50</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Relacja TVN24 z manifestacji w stolicy &mdash; mieszka&#324;cy ostro o planowanym przebiegu A50.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na tvn24.pl &rarr;</span>
-                </a>
-
-                <a href="https://www.rdc.pl/aktualnosci/warszawa/protest-co-sie-dzieje-przy-ministerstwie-infrastruktury-obwodnica-aglomeracji-warszawskiej-warianty_7JZJBqaXfEF7kNW5PGhq"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">RADIO DLA CIEBIE</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest. Co si&#281; dzieje przy Ministerstwie Infrastruktury</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">RDC relacjonuje pikiet&#281; pod ministerstwem &mdash; warianty Obwodnicy Aglomeracji Warszawskiej w ogniu krytyki.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">S&#322;uchaj na rdc.pl &rarr;</span>
-                </a>
-
-                <a href="https://www.przegladpiaseczynski.pl/artykul/15171,protest-pod-ministerstwem-przeciw-wariantowi-tarczynskiemu-a50"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">PRZEGL&#260;D PIASECZY&#323;SKI</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest pod ministerstwem przeciw wariantowi tarczy&#324;skiemu A50</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Mieszka&#324;cy gmin Tarczyn i Pra&#380;m&oacute;w pod ministerstwem &mdash; sprzeciw wobec wariantu tarczy&#324;skiego.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na przegladpiaseczynski.pl &rarr;</span>
-                </a>
-
-                <a href="https://epiaseczno.pl/protest-przeciwko-obwodnicy-a50-w-warszawie-16-stycznia-2026-r/"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">EPIASECZNO</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest przeciwko obwodnicy A50 w Warszawie &mdash; 16 stycznia 2026</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Zapowied&#378; pierwszej pikiety pod ministerstwem 16 stycznia 2026 &mdash; mieszka&#324;cy zabieraj&#261; g&#322;os.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na epiaseczno.pl &rarr;</span>
-                </a>
-
-                <a href="https://www.facebook.com/61559861506996/posts/pfbid0dGhziu79J36AmrZpNvgbk8qgjbua8WYDAbNmEeEYDsC6ivs9HjPJc7RCYfH96VoMl/"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">FACEBOOK</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Wpis spo&#322;eczno&#347;ci o sprzeciwie wobec A50</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Post z profilu zaanga&#380;owanego w sprzeciw wobec planowanego przebiegu A50.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na Facebooku &rarr;</span>
-                </a>
-
-                <a href="https://vod.tvp.pl/live,1/tvp-3-warszawa,399754/2026-04-08/reagujemy,2856467"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP3 WARSZAWA</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">&bdquo;Reagujemy&rdquo; (08.04.2026) &mdash; TVP3 Warszawa</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">Wydanie programu &bdquo;Reagujemy&rdquo; z 8 kwietnia 2026 &mdash; sprawa A50 i g&#322;os mieszka&#324;c&oacute;w.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na vod.tvp.pl &rarr;</span>
-                </a>
-
-                <a href="https://radiokolor.pl/bardzo-bysmy-chcieli-mieszkac-tak-jak-mieszkamy-mieszkancy-protestowali-przed-siedziba-gddkia-ws-budowy-obwodnicy-aglomeracji-warszawskiej/"
-                   target="_blank" rel="noopener"
-                   class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
-                    <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">Radio Kolor</div>
-                    <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Mieszka&#324;cy protestowali przed siedzib&#261; GDDKiA</h3>
-                    <p class="text-gray-600 text-sm mb-4 flex-grow">W pi&#261;tek przed siedzib&#261; GDDKiA zebra&#322;o si&#281; blisko 400 mieszka&#324;c&oacute;w Pra&#380;mowa, Gr&oacute;jca, Tarczyna oraz s&#261;siednich gmin. Powodem manifestacji by&#322;a budz&#261;ca kontrowersje budowa po&#322;udniowo-wschodniej cz&#281;&#347;ci Obwodnicy Aglomeracji Warszawskiej.</p>
-                    <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na radiokolor.pl &rarr;</span>
-                </a>
-            </div>
-            <p class="text-center text-gray-500 text-sm mt-8">Masz link do kolejnego materia&#322;u? Napisz: <a href="mailto:kontakt@a50.pl" class="text-forest-600 hover:text-forest-800 underline">kontakt@a50.pl</a></p>
+<!-- Piszą o nas -->
+<section id="media" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <div class="inline-block bg-forest-100 text-forest-700 text-xs font-bold px-3 py-1 rounded-full mb-4">MEDIA O PROTE&#346;CIE</div>
+            <h2 class="text-3xl md:text-4xl font-bold text-forest-900 mb-4">Pisz&#261; o nas</h2>
+            <p class="text-gray-600 text-lg max-w-2xl mx-auto">Nasz sprzeciw s&#322;yszy coraz szersze grono &mdash; oto wyb&oacute;r artyku&#322;&oacute;w, kt&oacute;re opisuj&#261; spraw&#281; A50 i g&#322;os mieszka&#324;c&oacute;w.</p>
         </div>
-    </section>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <a href="https://wydarzenia.interia.pl/mazowieckie/news-mieszkancy-kontra-wielka-inwestycja-ledwo-wybudowali-domy-a,nId,23329457"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">INTERIA WYDARZENIA</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Mieszka&#324;cy kontra wielka inwestycja. Ledwo wybudowali domy, a ju&#380; grozi im wyw&#322;aszczenie</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Rodziny spod Warszawy, kt&oacute;re niedawno postawi&#322;y domy, stoj&#261; przed widmem wyw&#322;aszczenia pod budow&#281; A50 &mdash; wci&#261;&#380; sp&#322;acaj&#261; kredyty.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na interia.pl &rarr;</span>
+            </a>
 
-    <!-- Protest Info -->
-    <section id="protest" class="hidden py-20 bg-red-600 text-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <div class="inline-block bg-white/20 text-white text-sm font-bold px-4 py-1 rounded-full mb-6">
-                NAJBLI&#379;SZY PROTEST
-            </div>
-            <h2 class="text-4xl md:text-5xl font-black mb-6">24 kwietnia 2026</h2>
-            <p class="text-xl md:text-2xl mb-2 text-red-100">Pi&#261;tek, godz. 12:00</p>
-            <p class="text-xl md:text-2xl mb-4 text-red-100 font-semibold">Warszawa, ul. Wronia 53</p>
-            <p class="text-lg mb-8 text-red-200">Zabieramy g&#322;os mieszka&#324;c&oacute;w gminy Tarczyn do stolicy &mdash; tam, gdzie zapadaj&#261; decyzje.</p>
+            <a href="https://warszawa.tvp.pl/92523280/nie-chca-autostrady-pod-oknami-mieszkancy-prazmowa-protestuja"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Nie chc&#261; autostrady pod oknami. Mieszka&#324;cy Pra&#380;mowa protestuj&#261;</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Materia&#322; TVP Warszawa o mieszka&#324;cach gminy Pra&#380;m&oacute;w, kt&oacute;rzy nie godz&#261; si&#281; na poprowadzenie A50 tu&#380; pod ich oknami.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
+            </a>
 
-            <div class="bg-white/10 rounded-2xl p-6 max-w-lg mx-auto">
-                <p class="text-lg font-semibold mb-2">Zabierz ze sob&#261;:</p>
-                <p class="text-red-100">Transparenty, dobre nastawienie. Protest jest pokojowy i legalny.</p>
-            </div>
+            <a href="https://www.przegladpiaseczynski.pl/artykul/15724,kolejny-protest-przeciw-a50-mieszkancy-jada-do-warszawy"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">PRZEGL&#260;D PIASECZY&#323;SKI</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Kolejny protest przeciw A50. Mieszka&#324;cy jad&#261; do Warszawy</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Zapowied&#378; pikiety 24 kwietnia 2026 &mdash; mieszka&#324;cy trzech gmin jad&#261; pod siedzib&#281; GDDKiA w Warszawie.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na przegladpiaseczynski.pl &rarr;</span>
+            </a>
+
+            <a href="https://www.se.pl/warszawa/dramat-setek-rodzin-pod-warszawa-nowa-autostrada-zburzy-ich-domy-zyjemy-na-bombie-aa-fMfP-v8LM-cbgn.html"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">SUPER EXPRESS</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Dramat setek rodzin pod Warszaw&#261;. Nowa autostrada zburzy ich domy. &bdquo;&#379;yjemy na bombie&rdquo;</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Reporta&#380; o rodzinach, kt&oacute;re po latach budowania &#380;ycia mog&#261; straci&#263; dom pod walec inwestycji.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na se.pl &rarr;</span>
+            </a>
+
+            <a href="https://warszawa.tvp.pl/92893480/protest-setek-mieszkancow-uwazam-ze-jestesmy-dreczeni"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest setek mieszka&#324;c&oacute;w. &bdquo;Uwa&#380;am, &#380;e jeste&#347;my dr&#281;czeni&rdquo;</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Relacja TVP Warszawa z pikiety 24 kwietnia &mdash; setki mieszka&#324;c&oacute;w m&oacute;wi&#261; o latach niepewno&#347;ci.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
+            </a>
+
+            <a href="https://tvn24.pl/tvnwarszawa/okolice/obwodnica-aglomeracji-warszawskiej-mieszkancow-gmin-protestuja-st9015196"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVN24 WARSZAWA</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest mieszka&#324;c&oacute;w gmin Pra&#380;m&oacute;w i Tarczyn. Boj&#261; si&#281;, &#380;e zostan&#261; wysiedleni</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">TVN24 o obawach mieszka&#324;c&oacute;w dw&oacute;ch gmin: trasa A50 mo&#380;e oznacza&#263; konieczno&#347;&#263; opuszczenia dom&oacute;w.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na tvn24.pl &rarr;</span>
+            </a>
+
+            <a href="https://www.rdc.pl/aktualnosci/warszawa/boja-sie-ze-straca-swoje-domy-mieszkancy-gmin-pod-warszawa-przeciwni-budowie-a50_xjVmhPOZLxQE7CBn5KEj"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">RADIO DLA CIEBIE</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Boj&#261; si&#281;, &#380;e strac&#261; swoje domy. Mieszka&#324;cy gmin pod Warszaw&#261; przeciwni A50</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">RDC: protest gmin przeciwko budowie trasy A50 i ryzyku utraty dom&oacute;w pod inwestycj&#281;.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">S&#322;uchaj na rdc.pl &rarr;</span>
+            </a>
+
+            <a href="https://piasecznonews.pl/pl/848_prazmow/112734_protest-mieszkancow-przeciw-planowanemu-przebiegowi-a50-przez-gmine-prazmow.html"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">PIASECZNO NEWS</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest mieszka&#324;c&oacute;w przeciw planowanemu przebiegowi A50 przez gm. Pra&#380;m&oacute;w</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Lokalna relacja z dzia&#322;a&#324; mieszka&#324;c&oacute;w gminy Pra&#380;m&oacute;w przeciwko proponowanej trasie A50.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na piasecznonews.pl &rarr;</span>
+            </a>
+
+            <a href="https://m.facebook.com/story.php?story_fbid=pfbid028wK5NhKHvGDnYY8ydRREYRgRiQhpLsaLGcqw8ofFADF7hzuRuqXYzE2gmFjz5XAfl&amp;id=100063526749670"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">FACEBOOK</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Wpis o prote&#347;cie przeciwko A50</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Post w mediach spo&#322;eczno&#347;ciowych dokumentuj&#261;cy g&#322;os mieszka&#324;c&oacute;w przeciw A50.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na Facebooku &rarr;</span>
+            </a>
+
+            <a href="https://warszawa.tvp.pl/92898641/zawsze-na-temat-tvp3-warszawa-24042026-protest-przeciwko-przebiegowi-autostrady-a50"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">&bdquo;Zawsze na temat&rdquo; (24.04.2026) &mdash; protest przeciwko przebiegowi A50</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Wydanie programu &bdquo;Zawsze na temat&rdquo; po&#347;wi&#281;cone protestowi pod GDDKiA przeciw planom przebiegu A50.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
+            </a>
+
+            <a href="https://warszawa.tvp.pl/92898120/reagujemy-tvp3-warszawa-24042026-protest-autostrada-a50"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">&bdquo;Reagujemy&rdquo; (24.04.2026) &mdash; protest, autostrada A50</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Materia&#322; programu &bdquo;Reagujemy&rdquo; z dnia protestu &mdash; rozmowy z mieszka&#324;cami pod siedzib&#261; GDDKiA.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
+            </a>
+
+            <a href="https://www.facebook.com/share/p/1B3XqWMjYg/"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">FACEBOOK</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Wpis o protestach mieszka&#324;c&oacute;w</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Udost&#281;pniony post o sprzeciwie wobec planowanej trasy A50.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na Facebooku &rarr;</span>
+            </a>
+
+            <a href="https://www.rynekinfrastruktury.pl/wiadomosci/drogi-i-autostrady/beda-protestowac-przeciwko-wariantom-a50-obwodnicy-aglomeracji-warszawskiej-99513.html"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">RYNEK INFRASTRUKTURY</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">B&#281;d&#261; protestowa&#263; przeciwko wariantom A50 Obwodnicy Aglomeracji Warszawskiej</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Bran&#380;owy serwis o zapowiedzianych protestach przeciwko wariantom A50.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na rynekinfrastruktury.pl &rarr;</span>
+            </a>
+
+            <a href="https://moto.pl/MotoPL/7,190330,32715997,drogowcy-sie-doigrali-beda-protesty-przeciwko-obwodnicy-aglomeracji.html"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">MOTO.PL</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Drogowcy si&#281; doigrali. B&#281;d&#261; protesty przeciwko Obwodnicy Aglomeracji</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">moto.pl: rosn&#261;cy spo&#322;eczny sprzeciw wobec wariant&oacute;w A50 zaproponowanych przez GDDKiA.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na moto.pl &rarr;</span>
+            </a>
+
+            <a href="https://piasecznonews.pl/pl/848_prazmow/112410_wazne-dla-mieszkancow-prazmowa.html"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">PIASECZNO NEWS</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Wa&#380;ne dla mieszka&#324;c&oacute;w Pra&#380;mowa</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Komunikat dla mieszka&#324;c&oacute;w gminy Pra&#380;m&oacute;w w sprawie planowanego przebiegu A50.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na piasecznonews.pl &rarr;</span>
+            </a>
+
+            <a href="https://ewarszawa.pl/news-news-4922-te_domy_trzeba_bedzie_wyburzyc_aby_zbudowac_obwodnice_warszawy_mieszkancy_zapowiedzieli_protest"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">EWARSZAWA</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Te domy trzeba b&#281;dzie wyburzy&#263;, aby zbudowa&#263; Obwodnic&#281; Warszawy. Mieszka&#324;cy zapowiedzieli protest</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">eWarszawa o domach przeznaczonych pod wyburzenie i zapowiadanym sprzeciwie mieszka&#324;c&oacute;w.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na ewarszawa.pl &rarr;</span>
+            </a>
+
+            <a href="https://informacje.wp.pl/tarczyn-autostrada-przez-domy-i-pola-to-wyrok-dla-naszej-gminy-7256066545377857a"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">WP INFORMACJE</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Tarczyn. Autostrada przez domy i pola: &bdquo;To wyrok dla naszej gminy&rdquo;</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Wirtualna Polska o tym, jak A50 mo&#380;e przeci&#261;&#263; gmin&#281; Tarczyn &mdash; rozmowy z mieszka&#324;cami.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na wp.pl &rarr;</span>
+            </a>
+
+            <a href="https://agronews.com.pl/artykul/autostrada-przez-domy-i-pola-mieszkancy-tarczyna-to-wyrok-dla-naszej-gminy/"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">AGRONEWS</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Autostrada przez domy i pola. Mieszka&#324;cy Tarczyna: &bdquo;To wyrok dla naszej gminy&rdquo;</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Agronews o uderzeniu autostrady w gospodarstwa rolne i zabudow&#281; gminy Tarczyn.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na agronews.com.pl &rarr;</span>
+            </a>
+
+            <a href="https://warszawa.tvp.pl/91577992/reagujemy-mieszkancy-gminy-tarczyn-w-walce-z-gddkia"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">&bdquo;Reagujemy&rdquo; &mdash; Mieszka&#324;cy gminy Tarczyn w walce z GDDKiA</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Materia&#322; programu &bdquo;Reagujemy&rdquo; o sporze gminy Tarczyn z GDDKiA o przebieg A50.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
+            </a>
+
+            <a href="https://warszawa.tvp.pl/91567725/reagujemy-tvp3-warszawa-13022026-protest-mieszkancow-gminy-tarczyn"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP WARSZAWA</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">&bdquo;Reagujemy&rdquo; (13.02.2026) &mdash; protest mieszka&#324;c&oacute;w gminy Tarczyn</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Wydanie programu &bdquo;Reagujemy&rdquo; z lutego 2026 &mdash; sprzeciw mieszka&#324;c&oacute;w gminy Tarczyn wobec A50.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na warszawa.tvp.pl &rarr;</span>
+            </a>
+
+            <a href="https://warszawa.naszemiasto.pl/protest-pod-ministerstwem-i-gddkia-ta-autostrada-ma-polaczyc-cpk-z-warszawa-mieszkancy-mowia-nie-a50/ar/c1p2-28644591"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">WARSZAWA NASZE MIASTO</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest pod ministerstwem i GDDKiA. Mieszka&#324;cy m&oacute;wi&#261; &bdquo;nie&rdquo; A50</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Autostrada ma po&#322;&#261;czy&#263; CPK z Warszaw&#261; &mdash; mieszka&#324;cy gmin pod stolic&#261; m&oacute;wi&#261; do&#347;&#263;.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na warszawa.naszemiasto.pl &rarr;</span>
+            </a>
+
+            <a href="https://tvn24.pl/tvnwarszawa/srodmiescie/warszawa-protest-mieszkancow-przeciwko-budowie-autostrady-a50-st8852112"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVN24 WARSZAWA</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Warszawa. Protest mieszka&#324;c&oacute;w przeciwko budowie autostrady A50</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Relacja TVN24 z manifestacji w stolicy &mdash; mieszka&#324;cy ostro o planowanym przebiegu A50.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na tvn24.pl &rarr;</span>
+            </a>
+
+            <a href="https://www.rdc.pl/aktualnosci/warszawa/protest-co-sie-dzieje-przy-ministerstwie-infrastruktury-obwodnica-aglomeracji-warszawskiej-warianty_7JZJBqaXfEF7kNW5PGhq"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">RADIO DLA CIEBIE</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest. Co si&#281; dzieje przy Ministerstwie Infrastruktury</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">RDC relacjonuje pikiet&#281; pod ministerstwem &mdash; warianty Obwodnicy Aglomeracji Warszawskiej w ogniu krytyki.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">S&#322;uchaj na rdc.pl &rarr;</span>
+            </a>
+
+            <a href="https://www.przegladpiaseczynski.pl/artykul/15171,protest-pod-ministerstwem-przeciw-wariantowi-tarczynskiemu-a50"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">PRZEGL&#260;D PIASECZY&#323;SKI</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest pod ministerstwem przeciw wariantowi tarczy&#324;skiemu A50</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Mieszka&#324;cy gmin Tarczyn i Pra&#380;m&oacute;w pod ministerstwem &mdash; sprzeciw wobec wariantu tarczy&#324;skiego.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na przegladpiaseczynski.pl &rarr;</span>
+            </a>
+
+            <a href="https://epiaseczno.pl/protest-przeciwko-obwodnicy-a50-w-warszawie-16-stycznia-2026-r/"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">EPIASECZNO</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Protest przeciwko obwodnicy A50 w Warszawie &mdash; 16 stycznia 2026</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Zapowied&#378; pierwszej pikiety pod ministerstwem 16 stycznia 2026 &mdash; mieszka&#324;cy zabieraj&#261; g&#322;os.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na epiaseczno.pl &rarr;</span>
+            </a>
+
+            <a href="https://www.facebook.com/61559861506996/posts/pfbid0dGhziu79J36AmrZpNvgbk8qgjbua8WYDAbNmEeEYDsC6ivs9HjPJc7RCYfH96VoMl/"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">FACEBOOK</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Wpis spo&#322;eczno&#347;ci o sprzeciwie wobec A50</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Post z profilu zaanga&#380;owanego w sprzeciw wobec planowanego przebiegu A50.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na Facebooku &rarr;</span>
+            </a>
+
+            <a href="https://vod.tvp.pl/live,1/tvp-3-warszawa,399754/2026-04-08/reagujemy,2856467"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">TVP3 WARSZAWA</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">&bdquo;Reagujemy&rdquo; (08.04.2026) &mdash; TVP3 Warszawa</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">Wydanie programu &bdquo;Reagujemy&rdquo; z 8 kwietnia 2026 &mdash; sprawa A50 i g&#322;os mieszka&#324;c&oacute;w.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Zobacz na vod.tvp.pl &rarr;</span>
+            </a>
+
+            <a href="https://radiokolor.pl/bardzo-bysmy-chcieli-mieszkac-tak-jak-mieszkamy-mieszkancy-protestowali-przed-siedziba-gddkia-ws-budowy-obwodnicy-aglomeracji-warszawskiej/"
+               target="_blank" rel="noopener"
+               class="flex flex-col bg-forest-50 rounded-2xl p-6 border border-forest-200 hover:border-forest-500 hover:shadow-lg transition group">
+                <div class="inline-block self-start bg-white text-forest-700 text-xs font-bold px-2 py-1 rounded mb-4 border border-forest-200">Radio Kolor</div>
+                <h3 class="text-lg font-bold text-forest-900 mb-3 leading-snug">Mieszka&#324;cy protestowali przed siedzib&#261; GDDKiA</h3>
+                <p class="text-gray-600 text-sm mb-4 flex-grow">W pi&#261;tek przed siedzib&#261; GDDKiA zebra&#322;o si&#281; blisko 400 mieszka&#324;c&oacute;w Pra&#380;mowa, Gr&oacute;jca, Tarczyna oraz s&#261;siednich gmin. Powodem manifestacji by&#322;a budz&#261;ca kontrowersje budowa po&#322;udniowo-wschodniej cz&#281;&#347;ci Obwodnicy Aglomeracji Warszawskiej.</p>
+                <span class="text-forest-600 text-sm font-semibold group-hover:text-forest-800 mt-auto">Czytaj na radiokolor.pl &rarr;</span>
+            </a>
         </div>
-    </section>
+        <p class="text-center text-gray-500 text-sm mt-8">Masz link do kolejnego materia&#322;u? Napisz: <a href="mailto:kontakt@a50.pl" class="text-forest-600 hover:text-forest-800 underline">kontakt@a50.pl</a></p>
+    </div>
+</section>
 
-    <!-- Formularz zapisu na protest -->
-    <section id="zapis" class="hidden py-20 bg-red-700 text-white">
-        <div class="max-w-lg mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-2">Zapisz si&#281; na protest</h2>
-            <p class="text-red-200 text-center mb-8">Daj nam zna&#263;, &#380;e b&#281;dziesz &mdash; to pomaga w organizacji.</p>
+<!-- Protest Info -->
+<section id="protest" class="hidden py-20 bg-red-600 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <div class="inline-block bg-white/20 text-white text-sm font-bold px-4 py-1 rounded-full mb-6">
+            NAJBLI&#379;SZY PROTEST
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black mb-6">24 kwietnia 2026</h2>
+        <p class="text-xl md:text-2xl mb-2 text-red-100">Pi&#261;tek, godz. 12:00</p>
+        <p class="text-xl md:text-2xl mb-4 text-red-100 font-semibold">Warszawa, ul. Wronia 53</p>
+        <p class="text-lg mb-8 text-red-200">Zabieramy g&#322;os mieszka&#324;c&oacute;w gminy Tarczyn do stolicy &mdash; tam, gdzie zapadaj&#261; decyzje.</p>
 
-            <form id="protest-form" class="space-y-4">
+        <div class="bg-white/10 rounded-2xl p-6 max-w-lg mx-auto">
+            <p class="text-lg font-semibold mb-2">Zabierz ze sob&#261;:</p>
+            <p class="text-red-100">Transparenty, dobre nastawienie. Protest jest pokojowy i legalny.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Formularz zapisu na protest -->
+<section id="zapis" class="hidden py-20 bg-red-700 text-white">
+    <div class="max-w-lg mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-2">Zapisz si&#281; na protest</h2>
+        <p class="text-red-200 text-center mb-8">Daj nam zna&#263;, &#380;e b&#281;dziesz &mdash; to pomaga w organizacji.</p>
+
+        <form id="protest-form" class="space-y-4">
+            <div>
+                <label class="block text-sm font-semibold mb-1">Imi&#281; i nazwisko</label>
+                <input type="text" name="imie" required
+                       class="w-full px-4 py-3 rounded-xl text-gray-900 bg-white/95 focus:outline-none focus:ring-2 focus:ring-white"
+                       placeholder="Jan Kowalski">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold mb-1">Liczba os&oacute;b (licz&#261;c z Tob&#261;)</label>
+                <input type="number" name="liczba" min="1" max="99" value="1" required
+                       class="w-full px-4 py-3 rounded-xl text-gray-900 bg-white/95 focus:outline-none focus:ring-2 focus:ring-white">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold mb-1">Miejscowo&#347;&#263;</label>
+                <input type="text" name="miejscowosc" required
+                       class="w-full px-4 py-3 rounded-xl text-gray-900 bg-white/95 focus:outline-none focus:ring-2 focus:ring-white"
+                       placeholder="Tarczyn">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold mb-1">Numer telefonu</label>
+                <input type="tel" name="telefon" required pattern="(\+?48)?[\s\-]?\d{3}[\s\-]?\d{3}[\s\-]?\d{3}"
+                       class="w-full px-4 py-3 rounded-xl text-gray-900 bg-white/95 focus:outline-none focus:ring-2 focus:ring-white"
+                       placeholder="600 123 456">
+                <p id="tel-error" class="text-red-200 text-xs mt-1 hidden">Podaj poprawny polski numer (9 cyfr)</p>
+            </div>
+            <div>
+                <label class="block text-sm font-semibold mb-1">Transport</label>
+                <select name="transport" required
+                        class="w-full px-4 py-3 rounded-xl text-gray-900 bg-white/95 focus:outline-none focus:ring-2 focus:ring-white">
+                    <option value="">Wybierz...</option>
+                    <option value="Autokar z Tarczyna">Autokar z Tarczyna</option>
+                    <option value="Transport w&#322;asny">Transport w&#322;asny</option>
+                </select>
+            </div>
+            <!-- Honeypot -->
+            <div style="position:absolute;left:-9999px" aria-hidden="true">
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" id="submit-btn"
+                    class="w-full bg-white text-red-700 font-bold py-4 rounded-xl text-lg hover:bg-red-50 transition shadow-lg">
+                Zapisz si&#281;
+            </button>
+            <p id="form-msg" class="text-center text-sm mt-2 hidden"></p>
+        </form>
+        <div id="thank-you" class="hidden text-center py-8">
+            <div class="text-6xl mb-4">&#x2764;&#xFE0F;</div>
+            <h3 class="text-2xl font-bold mb-3">Dzi&#281;kujemy za zapis!</h3>
+            <p class="text-red-100 text-lg mb-2">Liczymy na Ciebie <strong>24 kwietnia</strong> o <strong>12:00</strong></p>
+            <p class="text-red-100 mb-6">Warszawa, ul. Wronia 53</p>
+            <div class="bg-white/10 rounded-xl p-4 max-w-sm mx-auto">
+                <p class="text-sm text-red-200 mb-2">Pami&#281;taj:</p>
+                <p class="text-sm text-white">Przed protestem zg&#322;o&#347; si&#281; do organizator&oacute;w po kamizelki odblaskowe i b&#261;d&#378; punktualnie!</p>
+            </div>
+            <p class="text-red-200 text-sm mt-6">Udost&#281;pnij t&#281; stron&#281; znajomym &mdash; im nas wi&#281;cej, tym silniejszy g&#322;os.</p>
+        </div>
+    </div>
+</section>
+
+<!-- What you can do -->
+<section class="py-20 bg-forest-50">
+    <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-forest-900 mb-4">Co mo&#380;esz zrobi&#263;?</h2>
+            <p class="text-gray-600 text-lg">Ka&#380;dy g&#322;os si&#281; liczy</p>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-6">
+            <div class="hidden bg-white rounded-2xl p-6 shadow-md border border-forest-100 flex gap-4">
+                <div class="text-3xl">1</div>
                 <div>
-                    <label class="block text-sm font-semibold mb-1">Imi&#281; i nazwisko</label>
-                    <input type="text" name="imie" required
-                           class="w-full px-4 py-3 rounded-xl text-gray-900 bg-white/95 focus:outline-none focus:ring-2 focus:ring-white"
-                           placeholder="Jan Kowalski">
+                    <h3 class="font-bold text-forest-900 mb-1">Przyjd&#378; na protest</h3>
+                    <p class="text-gray-600 text-sm">24 kwietnia, Warszawa, ul. Wronia 53. Im nas wi&#281;cej, tym silniejszy g&#322;os.</p>
                 </div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-forest-100 flex gap-4">
+                <div class="text-3xl">1</div>
                 <div>
-                    <label class="block text-sm font-semibold mb-1">Liczba os&oacute;b (licz&#261;c z Tob&#261;)</label>
-                    <input type="number" name="liczba" min="1" max="99" value="1" required
-                           class="w-full px-4 py-3 rounded-xl text-gray-900 bg-white/95 focus:outline-none focus:ring-2 focus:ring-white">
+                    <h3 class="font-bold text-forest-900 mb-1">Udost&#281;pnij t&#281; stron&#281;</h3>
+                    <p class="text-gray-600 text-sm">Wy&#347;lij link znajomym, rodzinie, s&#261;siadom. Ka&#380;dy powinien wiedzie&#263;.</p>
                 </div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-forest-100 flex gap-4">
+                <div class="text-3xl">2</div>
                 <div>
-                    <label class="block text-sm font-semibold mb-1">Miejscowo&#347;&#263;</label>
-                    <input type="text" name="miejscowosc" required
-                           class="w-full px-4 py-3 rounded-xl text-gray-900 bg-white/95 focus:outline-none focus:ring-2 focus:ring-white"
-                           placeholder="Tarczyn">
+                    <h3 class="font-bold text-forest-900 mb-1">Napisz do pos&#322;a</h3>
+                    <p class="text-gray-600 text-sm">Skontaktuj si&#281; z lokalnym pos&#322;em i wyra&#378; sw&oacute;j sprzeciw.</p>
                 </div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-forest-100 flex gap-4">
+                <div class="text-3xl">3</div>
                 <div>
-                    <label class="block text-sm font-semibold mb-1">Numer telefonu</label>
-                    <input type="tel" name="telefon" required pattern="(\+?48)?[\s\-]?\d{3}[\s\-]?\d{3}[\s\-]?\d{3}"
-                           class="w-full px-4 py-3 rounded-xl text-gray-900 bg-white/95 focus:outline-none focus:ring-2 focus:ring-white"
-                           placeholder="600 123 456">
-                    <p id="tel-error" class="text-red-200 text-xs mt-1 hidden">Podaj poprawny polski numer (9 cyfr)</p>
-                </div>
-                <div>
-                    <label class="block text-sm font-semibold mb-1">Transport</label>
-                    <select name="transport" required
-                            class="w-full px-4 py-3 rounded-xl text-gray-900 bg-white/95 focus:outline-none focus:ring-2 focus:ring-white">
-                        <option value="">Wybierz...</option>
-                        <option value="Autokar z Tarczyna">Autokar z Tarczyna</option>
-                        <option value="Transport w&#322;asny">Transport w&#322;asny</option>
-                    </select>
-                </div>
-                <!-- Honeypot -->
-                <div style="position:absolute;left:-9999px" aria-hidden="true">
-                    <input type="text" name="website" tabindex="-1" autocomplete="off">
-                </div>
-                <button type="submit" id="submit-btn"
-                        class="w-full bg-white text-red-700 font-bold py-4 rounded-xl text-lg hover:bg-red-50 transition shadow-lg">
-                    Zapisz si&#281;
-                </button>
-                <p id="form-msg" class="text-center text-sm mt-2 hidden"></p>
-            </form>
-            <div id="thank-you" class="hidden text-center py-8">
-                <div class="text-6xl mb-4">&#x2764;&#xFE0F;</div>
-                <h3 class="text-2xl font-bold mb-3">Dzi&#281;kujemy za zapis!</h3>
-                <p class="text-red-100 text-lg mb-2">Liczymy na Ciebie <strong>24 kwietnia</strong> o <strong>12:00</strong></p>
-                <p class="text-red-100 mb-6">Warszawa, ul. Wronia 53</p>
-                <div class="bg-white/10 rounded-xl p-4 max-w-sm mx-auto">
-                    <p class="text-sm text-red-200 mb-2">Pami&#281;taj:</p>
-                    <p class="text-sm text-white">Przed protestem zg&#322;o&#347; si&#281; do organizator&oacute;w po kamizelki odblaskowe i b&#261;d&#378; punktualnie!</p>
-                </div>
-                <p class="text-red-200 text-sm mt-6">Udost&#281;pnij t&#281; stron&#281; znajomym &mdash; im nas wi&#281;cej, tym silniejszy g&#322;os.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- What you can do -->
-    <section class="py-20 bg-forest-50">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-forest-900 mb-4">Co mo&#380;esz zrobi&#263;?</h2>
-                <p class="text-gray-600 text-lg">Ka&#380;dy g&#322;os si&#281; liczy</p>
-            </div>
-            <div class="grid sm:grid-cols-2 gap-6">
-                <div class="hidden bg-white rounded-2xl p-6 shadow-md border border-forest-100 flex gap-4">
-                    <div class="text-3xl">1</div>
-                    <div>
-                        <h3 class="font-bold text-forest-900 mb-1">Przyjd&#378; na protest</h3>
-                        <p class="text-gray-600 text-sm">24 kwietnia, Warszawa, ul. Wronia 53. Im nas wi&#281;cej, tym silniejszy g&#322;os.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-forest-100 flex gap-4">
-                    <div class="text-3xl">1</div>
-                    <div>
-                        <h3 class="font-bold text-forest-900 mb-1">Udost&#281;pnij t&#281; stron&#281;</h3>
-                        <p class="text-gray-600 text-sm">Wy&#347;lij link znajomym, rodzinie, s&#261;siadom. Ka&#380;dy powinien wiedzie&#263;.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-forest-100 flex gap-4">
-                    <div class="text-3xl">2</div>
-                    <div>
-                        <h3 class="font-bold text-forest-900 mb-1">Napisz do pos&#322;a</h3>
-                        <p class="text-gray-600 text-sm">Skontaktuj si&#281; z lokalnym pos&#322;em i wyra&#378; sw&oacute;j sprzeciw.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-forest-100 flex gap-4">
-                    <div class="text-3xl">3</div>
-                    <div>
-                        <h3 class="font-bold text-forest-900 mb-1">Z&#322;&oacute;&#380; uwagi do GDDKiA</h3>
-                        <p class="text-gray-600 text-sm">W ramach konsultacji spo&#322;ecznych masz prawo z&#322;o&#380;y&#263; formalne uwagi.</p>
-                    </div>
+                    <h3 class="font-bold text-forest-900 mb-1">Z&#322;&oacute;&#380; uwagi do GDDKiA</h3>
+                    <p class="text-gray-600 text-sm">W ramach konsultacji spo&#322;ecznych masz prawo z&#322;o&#380;y&#263; formalne uwagi.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- FAQ -->
-    <section id="faq" class="py-20 bg-white">
-        <div class="max-w-3xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-forest-900 mb-4">Cz&#281;sto zadawane pytania</h2>
+<!-- FAQ -->
+<section id="faq" class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-forest-900 mb-4">Cz&#281;sto zadawane pytania</h2>
+        </div>
+
+        <div class="space-y-4">
+            <details class="group bg-forest-50 rounded-xl border border-forest-200">
+                <summary class="cursor-pointer p-5 font-semibold text-forest-900 flex justify-between items-center">
+                    Czy jeste&#347;my przeciwko budowie dr&oacute;g?
+                    <svg class="w-5 h-5 text-forest-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-gray-600">
+                    <strong>Nie.</strong> Popieramy rozw&oacute;j infrastruktury, ale nie kosztem zniszczenia &#347;rodowiska, dom&oacute;w i spo&#322;eczno&#347;ci.
+                    Domagamy si&#281; wyboru wariantu wzd&#322;u&#380; istniej&#261;cej DK50, kt&oacute;ry jest mniej inwazyjny i popierany przez mieszka&#324;c&oacute;w.
+                </div>
+            </details>
+
+            <details class="group bg-forest-50 rounded-xl border border-forest-200">
+                <summary class="cursor-pointer p-5 font-semibold text-forest-900 flex justify-between items-center">
+                    Jaki wariant popieramy?
+                    <svg class="w-5 h-5 text-forest-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-gray-600">
+                    Popieramy wariant poprowadzenia trasy wzd&#322;u&#380; istniej&#261;cej drogi krajowej DK50. Jest to rozwi&#261;zanie mniej kosztowne,
+                    mniej inwazyjne i zgodne z oczekiwaniami spo&#322;eczno&#347;ci lokalnych oraz samorz&#261;d&oacute;w.
+                </div>
+            </details>
+
+            <details class="group bg-forest-50 rounded-xl border border-forest-200">
+                <summary class="cursor-pointer p-5 font-semibold text-forest-900 flex justify-between items-center">
+                    Czy mog&#281; jeszcze z&#322;o&#380;y&#263; uwagi do GDDKiA?
+                    <svg class="w-5 h-5 text-forest-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-gray-600">
+                    Konsultacje spo&#322;eczne maj&#261; okre&#347;lone terminy. &#346;led&#378; nasz&#261; stron&#281; i media spo&#322;eczno&#347;ciowe,
+                    aby nie przegapi&#263; kolejnej tury konsultacji. Mo&#380;esz te&#380; pisa&#263; do GDDKiA poza terminami konsultacji.
+                </div>
+            </details>
+
+            <details class="group bg-forest-50 rounded-xl border border-forest-200">
+                <summary class="cursor-pointer p-5 font-semibold text-forest-900 flex justify-between items-center">
+                    Dlaczego protestujemy w Warszawie?
+                    <svg class="w-5 h-5 text-forest-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-gray-600">
+                    Decyzje o przebiegu A50 zapadaj&#261; w Warszawie &mdash; w siedzibach GDDKiA i ministerstwie.
+                    Chcemy, &#380;eby nasz g&#322;os by&#322; s&#322;yszalny tam, gdzie podejmowane s&#261; kluczowe decyzje
+                    dotycz&#261;ce przysz&#322;o&#347;ci naszej gminy.
+                </div>
+            </details>
+
+            <details class="group bg-forest-50 rounded-xl border border-forest-200">
+                <summary class="cursor-pointer p-5 font-semibold text-forest-900 flex justify-between items-center">
+                    Kto stoi za t&#261; inicjatyw&#261;?
+                    <svg class="w-5 h-5 text-forest-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-gray-600">
+                    To inicjatywa mieszka&#324;c&oacute;w gminy Tarczyn i okolicznych miejscowo&#347;ci,
+                    kt&oacute;rzy sprzeciwiaj&#261; si&#281; planowanemu przebiegowi autostrady A50 przez ich tereny.
+                    Dzia&#322;amy niezale&#380;nie i pokojowo.
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- Kontakt -->
+<section id="kontakt" class="py-20 bg-forest-900 text-white">
+    <div class="max-w-2xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Kontakt</h2>
+        <p class="text-forest-200 text-lg mb-10">Masz pytania? Chcesz pom&oacute;c? Napisz do nas.</p>
+
+        <div class="bg-forest-800 rounded-2xl p-8 border border-forest-700 inline-block mb-8">
+            <svg class="w-12 h-12 text-forest-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <p class="text-forest-200 text-sm mb-2">Napisz do nas:</p>
+            <a href="mailto:kontakt@a50.pl" class="text-2xl md:text-3xl font-bold text-white hover:text-forest-300 transition">
+                kontakt@a50.pl
+            </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-xl mx-auto">
+            <div class="bg-forest-800 rounded-2xl p-6 border border-forest-700">
+                <h3 class="text-lg font-bold text-white mb-1">Krzysztof Ciupak</h3>
+                <p class="text-forest-300 text-sm mb-3">Gmina Tarczyn</p>
+                <a href="tel:+48601900306" class="text-forest-200 hover:text-white transition text-lg font-semibold">601 900 306</a>
             </div>
-
-            <div class="space-y-4">
-                <details class="group bg-forest-50 rounded-xl border border-forest-200">
-                    <summary class="cursor-pointer p-5 font-semibold text-forest-900 flex justify-between items-center">
-                        Czy jeste&#347;my przeciwko budowie dr&oacute;g?
-                        <svg class="w-5 h-5 text-forest-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </summary>
-                    <div class="px-5 pb-5 text-gray-600">
-                        <strong>Nie.</strong> Popieramy rozw&oacute;j infrastruktury, ale nie kosztem zniszczenia &#347;rodowiska, dom&oacute;w i spo&#322;eczno&#347;ci.
-                        Domagamy si&#281; wyboru wariantu wzd&#322;u&#380; istniej&#261;cej DK50, kt&oacute;ry jest mniej inwazyjny i popierany przez mieszka&#324;c&oacute;w.
-                    </div>
-                </details>
-
-                <details class="group bg-forest-50 rounded-xl border border-forest-200">
-                    <summary class="cursor-pointer p-5 font-semibold text-forest-900 flex justify-between items-center">
-                        Jaki wariant popieramy?
-                        <svg class="w-5 h-5 text-forest-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </summary>
-                    <div class="px-5 pb-5 text-gray-600">
-                        Popieramy wariant poprowadzenia trasy wzd&#322;u&#380; istniej&#261;cej drogi krajowej DK50. Jest to rozwi&#261;zanie mniej kosztowne,
-                        mniej inwazyjne i zgodne z oczekiwaniami spo&#322;eczno&#347;ci lokalnych oraz samorz&#261;d&oacute;w.
-                    </div>
-                </details>
-
-                <details class="group bg-forest-50 rounded-xl border border-forest-200">
-                    <summary class="cursor-pointer p-5 font-semibold text-forest-900 flex justify-between items-center">
-                        Czy mog&#281; jeszcze z&#322;o&#380;y&#263; uwagi do GDDKiA?
-                        <svg class="w-5 h-5 text-forest-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </summary>
-                    <div class="px-5 pb-5 text-gray-600">
-                        Konsultacje spo&#322;eczne maj&#261; okre&#347;lone terminy. &#346;led&#378; nasz&#261; stron&#281; i media spo&#322;eczno&#347;ciowe,
-                        aby nie przegapi&#263; kolejnej tury konsultacji. Mo&#380;esz te&#380; pisa&#263; do GDDKiA poza terminami konsultacji.
-                    </div>
-                </details>
-
-                <details class="group bg-forest-50 rounded-xl border border-forest-200">
-                    <summary class="cursor-pointer p-5 font-semibold text-forest-900 flex justify-between items-center">
-                        Dlaczego protestujemy w Warszawie?
-                        <svg class="w-5 h-5 text-forest-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </summary>
-                    <div class="px-5 pb-5 text-gray-600">
-                        Decyzje o przebiegu A50 zapadaj&#261; w Warszawie &mdash; w siedzibach GDDKiA i ministerstwie.
-                        Chcemy, &#380;eby nasz g&#322;os by&#322; s&#322;yszalny tam, gdzie podejmowane s&#261; kluczowe decyzje
-                        dotycz&#261;ce przysz&#322;o&#347;ci naszej gminy.
-                    </div>
-                </details>
-
-                <details class="group bg-forest-50 rounded-xl border border-forest-200">
-                    <summary class="cursor-pointer p-5 font-semibold text-forest-900 flex justify-between items-center">
-                        Kto stoi za t&#261; inicjatyw&#261;?
-                        <svg class="w-5 h-5 text-forest-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                    </summary>
-                    <div class="px-5 pb-5 text-gray-600">
-                        To inicjatywa mieszka&#324;c&oacute;w gminy Tarczyn i okolicznych miejscowo&#347;ci,
-                        kt&oacute;rzy sprzeciwiaj&#261; si&#281; planowanemu przebiegowi autostrady A50 przez ich tereny.
-                        Dzia&#322;amy niezale&#380;nie i pokojowo.
-                    </div>
-                </details>
+            <div class="bg-forest-800 rounded-2xl p-6 border border-forest-700">
+                <h3 class="text-lg font-bold text-white mb-1">Justyna Szyma&#324;ska</h3>
+                <p class="text-forest-300 text-sm mb-3">Podole, Du&#380;y D&oacute;l, Las Lesznowolski, Lesznowola, Chudowola, Mirowice, Mirowice Wie&#347;, Go&#347;cie&#324;czyce</p>
+                <a href="tel:+48789712843" class="text-forest-200 hover:text-white transition text-lg font-semibold">789 712 843</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Kontakt -->
-    <section id="kontakt" class="py-20 bg-forest-900 text-white">
-        <div class="max-w-2xl mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Kontakt</h2>
-            <p class="text-forest-200 text-lg mb-10">Masz pytania? Chcesz pom&oacute;c? Napisz do nas.</p>
-
-            <div class="bg-forest-800 rounded-2xl p-8 border border-forest-700 inline-block mb-8">
-                <svg class="w-12 h-12 text-forest-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                </svg>
-                <p class="text-forest-200 text-sm mb-2">Napisz do nas:</p>
-                <a href="mailto:kontakt@a50.pl" class="text-2xl md:text-3xl font-bold text-white hover:text-forest-300 transition">
-                    kontakt@a50.pl
-                </a>
+<!-- Footer -->
+<footer class="bg-forest-950 text-forest-300 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <div class="text-white font-bold text-xl mb-1"><span class="text-red-500">STOP</span> A50 Tarczyn</div>
+                <div class="text-sm">Inicjatywa mieszka&#324;c&oacute;w gminy Tarczyn</div>
             </div>
-
-            <div class="grid md:grid-cols-2 gap-6 max-w-xl mx-auto">
-                <div class="bg-forest-800 rounded-2xl p-6 border border-forest-700">
-                    <h3 class="text-lg font-bold text-white mb-1">Krzysztof Ciupak</h3>
-                    <p class="text-forest-300 text-sm mb-3">Gmina Tarczyn</p>
-                    <a href="tel:+48601900306" class="text-forest-200 hover:text-white transition text-lg font-semibold">601 900 306</a>
-                </div>
-                <div class="bg-forest-800 rounded-2xl p-6 border border-forest-700">
-                    <h3 class="text-lg font-bold text-white mb-1">Justyna Szyma&#324;ska</h3>
-                    <p class="text-forest-300 text-sm mb-3">Podole, Du&#380;y D&oacute;l, Las Lesznowolski, Lesznowola, Chudowola, Mirowice, Mirowice Wie&#347;, Go&#347;cie&#324;czyce</p>
-                    <a href="tel:+48789712843" class="text-forest-200 hover:text-white transition text-lg font-semibold">789 712 843</a>
-                </div>
+            <div class="flex gap-6 text-sm">
+                <a href="#fakty" class="hover:text-white transition">Fakty</a>
+                <a href="#argumenty" class="hover:text-white transition">Argumenty</a>
+                <a href="#protest" class="hover:text-white transition">Protest</a>
+                <a href="#media" class="hover:text-white transition">Media</a>
+                <a href="https://drive.google.com/drive/folders/19I_y879tPXivldcdSp8LIRI9NGWq1uUE" target="_blank" rel="noopener" class="hover:text-white transition">Dane</a>
+                <a href="#kontakt" class="hover:text-white transition">Kontakt</a>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-forest-950 text-forest-300 py-12">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="text-center md:text-left">
-                    <div class="text-white font-bold text-xl mb-1"><span class="text-red-500">STOP</span> A50 Tarczyn</div>
-                    <div class="text-sm">Inicjatywa mieszka&#324;c&oacute;w gminy Tarczyn</div>
-                </div>
-                <div class="flex gap-6 text-sm">
-                    <a href="#fakty" class="hover:text-white transition">Fakty</a>
-                    <a href="#argumenty" class="hover:text-white transition">Argumenty</a>
-                    <a href="#protest" class="hover:text-white transition">Protest</a>
-                    <a href="#media" class="hover:text-white transition">Media</a>
-                    <a href="https://drive.google.com/drive/folders/19I_y879tPXivldcdSp8LIRI9NGWq1uUE" target="_blank" rel="noopener" class="hover:text-white transition">Dane</a>
-                    <a href="#kontakt" class="hover:text-white transition">Kontakt</a>
-                </div>
-            </div>
-            <div class="border-t border-forest-800 mt-8 pt-8 text-center text-xs text-forest-500">
-                <p class="mt-2">&copy; 2026 Inicjatywa STOP A50 Tarczyn. Wszelkie prawa zastrze&#380;one.</p>
-            </div>
+        <div class="border-t border-forest-800 mt-8 pt-8 text-center text-xs text-forest-500">
+            <p class="mt-2">&copy; 2026 Inicjatywa STOP A50 Tarczyn. Wszelkie prawa zastrze&#380;one.</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
         });
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-    </script>
+    });
+</script>
 
-    <script>
-        (function() {
-            var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw6K8pnhQo2kA_8K6ilEdn3nmFvfZ6qEl6tOCM7D3GPwf4A0u-OubJHDJM__jpHHNQe/exec';
-            var form = document.getElementById('protest-form');
-            var msg = document.getElementById('form-msg');
-            var btn = document.getElementById('submit-btn');
-            var loadTime = Date.now();
+<script>
+    (function() {
+        var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw6K8pnhQo2kA_8K6ilEdn3nmFvfZ6qEl6tOCM7D3GPwf4A0u-OubJHDJM__jpHHNQe/exec';
+        var form = document.getElementById('protest-form');
+        var msg = document.getElementById('form-msg');
+        var btn = document.getElementById('submit-btn');
+        var loadTime = Date.now();
 
-            var telError = document.getElementById('tel-error');
-            var thankYou = document.getElementById('thank-you');
-            var phoneRegex = /^(\+?48)?[\s\-]?\d{3}[\s\-]?\d{3}[\s\-]?\d{3}$/;
+        var telError = document.getElementById('tel-error');
+        var thankYou = document.getElementById('thank-you');
+        var phoneRegex = /^(\+?48)?[\s\-]?\d{3}[\s\-]?\d{3}[\s\-]?\d{3}$/;
 
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
 
-                var tel = form.telefon.value.trim();
-                if (!phoneRegex.test(tel)) {
-                    telError.classList.remove('hidden');
-                    return;
-                }
-                telError.classList.add('hidden');
+            var tel = form.telefon.value.trim();
+            if (!phoneRegex.test(tel)) {
+                telError.classList.remove('hidden');
+                return;
+            }
+            telError.classList.add('hidden');
 
-                if (Date.now() - loadTime < 3000) {
-                    msg.textContent = 'Zbyt szybko. Spr\u00f3buj ponownie.';
-                    msg.className = 'text-center text-sm mt-2 text-red-200';
-                    return;
-                }
+            if (Date.now() - loadTime < 3000) {
+                msg.textContent = 'Zbyt szybko. Spr\u00f3buj ponownie.';
+                msg.className = 'text-center text-sm mt-2 text-red-200';
+                return;
+            }
 
-                btn.disabled = true;
-                btn.textContent = 'Wysy\u0142anie...';
+            btn.disabled = true;
+            btn.textContent = 'Wysy\u0142anie...';
 
-                var data = {
-                    imie: form.imie.value.trim(),
-                    liczba: form.liczba.value,
-                    miejscowosc: form.miejscowosc.value.trim(),
-                    telefon: tel,
-                    transport: form.transport.value,
-                    website: form.website.value
-                };
+            var data = {
+                imie: form.imie.value.trim(),
+                liczba: form.liczba.value,
+                miejscowosc: form.miejscowosc.value.trim(),
+                telefon: tel,
+                transport: form.transport.value,
+                website: form.website.value
+            };
 
-                fetch(APPS_SCRIPT_URL, {
-                    method: 'POST',
-                    body: JSON.stringify(data)
-                })
+            fetch(APPS_SCRIPT_URL, {
+                method: 'POST',
+                body: JSON.stringify(data)
+            })
                 .then(function(r) { return r.json(); })
                 .then(function(r) {
                     if (r.result === 'success') {
@@ -1187,9 +1252,9 @@
                     btn.disabled = false;
                     btn.textContent = 'Zapisz si\u0119';
                 });
-            });
-        })();
-    </script>
+        });
+    })();
+</script>
 
 </body>
 </html>
